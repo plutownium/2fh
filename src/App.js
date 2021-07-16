@@ -11,8 +11,8 @@ function App() {
               <h1>Logo Here</h1>
             </div>
           </div>
-          <div className="header-container ">
-            <div className="flex-row header-options">
+          <div id="header-buttons" className="header-container">
+            <div className="header-options">
               <div>
                 <h3>Home</h3>
               </div>
