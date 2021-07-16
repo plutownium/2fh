@@ -35,12 +35,29 @@ function App() {
       <main>
         <div id="word_missing_00">
           <div id="thePartWithThePicture">
-            <div></div>
+            <div>
+              <h2>Start Today Now!</h2>
+              <hr />
+              <div>
+                <div>
+                  <h4>The ideal family size is...</h4>
+                  <div>
+                    <input />
+                    {/* 1-6, 7+ */}
+                  </div>
+                </div>
+                <div>
+                  <button>Join now!</button>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="threeButtonsSideBySide">
-            <div>Best Dating Site</div>
-            <div>Get your partner in just 15 min</div>
-            <div>High Quality Dating Pool</div>
+          <div id="threeButtonsSideBySide" className="ad-box-container">
+            <div className="flex-row space-between">
+              <div className="ad-box">Best Dating Site</div>
+              <div className="ad-box">Get your partner in just 15 min</div>
+              <div className="ad-box">High Quality Dating Pool</div>
+            </div>
           </div>
         </div>
         <div style={{ height: "70vh" }}>
