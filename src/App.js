@@ -34,25 +34,36 @@ function App() {
       </header>
       <main>
         <div id="word_missing_00">
-          <div id="thePartWithThePicture">
-            <div>
-              <h2>Start Today Now!</h2>
-              <hr />
-              <div>
-                <div>
-                  <h4>The ideal family size is...</h4>
+          {/* aaaaaaaaaaaaaaaaaaaa */}
+          {/* start today now */}
+          {/* aaaaaaaaaaaaaaaaaaaa */}
+          <div id="thePartWithThePicture" className="big-container-00">
+            <div className="sign-up-screen">
+              <div className="screen-splitter"></div>
+              <div className="screen-splitter">
+                <div id="start-today-now">
+                  <h2>Start Today Now!</h2>
+                  <hr />
                   <div>
-                    <input />
-                    {/* 1-6, 7+ */}
+                    <div>
+                      <h4>The ideal family size is...</h4>
+                      <div>
+                        <input />
+                        {/* 1-6, 7+ */}
+                      </div>
+                    </div>
+                    <div>
+                      <button>Join now!</button>
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <button>Join now!</button>
                 </div>
               </div>
             </div>
           </div>
-          <div id="threeButtonsSideBySide" className="ad-box-container">
+          {/* aaaaaaaaaaaaaaaaaaaa */}
+          {/* ------ fin ------ */}
+          {/* aaaaaaaaaaaaaaaaaaaa */}
+          <div id="threeButtonsSideBySide" className="ad-container">
             <div className="flex-row space-between">
               <div className="ad-box">Best Dating Site</div>
               <div className="ad-box">Get your partner in just 15 min</div>
@@ -65,17 +76,44 @@ function App() {
           {/* when on mobile, just use plain white, or a .. gradient maybe... */}
           <div>
             <h1>Best dating site ever!</h1>
-            <p>Words words words, lots of text</p>
+            <p>
+              we are the number one destination for online dating with more
+              sites, more relationships, and more marriages than any other
+              dating or personals site. We can help you find your perfect
+              partner. We offer a bespoke, highly personalized service and one
+              of the largest databases of professional singles.
+            </p>
           </div>
         </div>
+        {/* ********** */}
+        {/* promotional boxes displaying stats */}
+        {/* ********** */}
         <div style={{ "background-color": "#999", height: "300px" }}>
-          <div>
-            <div>over 2 million found love!</div>
-            <div>2.3 million messages sent weekly</div>
-            <div>sites most likely to lead to happy relationships</div>
-            <div>100% men invested in finding a life partner</div>
+          <div className="promo-boxes-container">
+            <div className="promo-box">
+              <div className="pretend-img"></div>
+              <h3>over 2 million found love!</h3>
+              <p>could you be next?</p>
+            </div>
+            <div className="promo-box">
+              <div className="pretend-img"></div>
+              <h3>2.3 million messages sent weekly</h3>
+              <p>could you be next?</p>
+            </div>
+            <div className="promo-box">
+              <div className="pretend-img"></div>
+              <h3>sites most likely to lead to happy relationships</h3>
+              <p>could you be next?</p>
+            </div>
+            <div className="promo-box">
+              <div className="pretend-img"></div>
+              <h3>100% men invested in finding a life partner</h3>
+              <p>could you be next?</p>
+            </div>
           </div>
         </div>
+        {/* ********** */}
+        {/* ********** */}
         <div style={{ height: "110vh" }}>
           <div>
             <h1>Compatibility counts!</h1>
