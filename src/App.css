@@ -1,9 +1,10 @@
 .ad-box {
   height: 220px;
-  background-color: greenyellow;
+  /* background-color: rgb(142, 155, 122); */
   border: 3px solid black;
   width: 32%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -11,6 +12,14 @@
 .ad-box-container {
   height: 220px;
   border: 5px solid red;
+}
+
+.ad-box-text {
+  font-size: 28px;
+}
+
+.ad-box-subtitle {
+  font-size: 16px;
 }
 
 .App {
@@ -32,6 +41,60 @@
 
 .big-container-00 {
   height: 80vh;
+}
+
+.brand-teal {
+  background-color: rgb(9, 138, 148);
+}
+
+.brand-soft-blue {
+  background-color: rgb(97, 125, 198);
+}
+
+.brand-dark-blue {
+  background-color: rgb(26, 95, 120);
+}
+
+.brand-yellow-bg {
+  background-color: rgb(255, 230, 0);
+}
+
+.brand-yellow-text {
+  color: rgb(255, 230, 0);
+}
+
+#compatibility-promo {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#compatibility-left {
+  width: 40%;
+  border: 3px solid blue;
+}
+
+#compatibility-right {
+  width: 30%;
+  border: 8px solid black;
+  height: 100%;
+}
+
+#family-size-input {
+  height: 60px;
+  width: 200px;
+  border-radius: 16px;
+}
+
+.option-centering {
+  text-align: center;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
 }
 
 .flex-row {
@@ -121,6 +184,7 @@ header * {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 3px solid green;
 }
 
 .sign-up-screen {
@@ -143,4 +207,20 @@ header * {
   border: 3px solid green;
   height: 80%;
   width: 80%;
+}
+
+#start-today-now-button {
+  border-radius: 10px;
+  height: 70px;
+  width: 300px;
+}
+
+#start-today-now-text {
+  color: white;
+  font-size: 66px;
+  margin: 0;
+}
+
+.white-text {
+  color: white;
 }

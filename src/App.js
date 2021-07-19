@@ -42,18 +42,34 @@ function App() {
               <div className="screen-splitter"></div>
               <div className="screen-splitter">
                 <div id="start-today-now">
-                  <h2>Start Today Now!</h2>
+                  <h2 id="start-today-now-text">Start Today Now!</h2>
                   <hr />
                   <div>
                     <div>
-                      <h4>The ideal family size is...</h4>
+                      <h4 className="white-text">
+                        The ideal family size is...
+                      </h4>
                       <div>
-                        <input />
+                        <select id="family-size-input">
+                          <option className="option-centering">1</option>
+                          <option className="option-centering">2</option>
+                          <option className="option-centering">3</option>
+                          <option className="option-centering">4</option>
+                          <option className="option-centering">5</option>
+                          <option className="option-centering">6</option>
+                          <option className="option-centering">7+</option>
+                        </select>
+                        <span className="white-text">child</span>
                         {/* 1-6, 7+ */}
                       </div>
                     </div>
                     <div>
-                      <button>Join now!</button>
+                      <button
+                        id="start-today-now-button"
+                        className="brand-yellow-bg"
+                      >
+                        Join now!
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -65,9 +81,32 @@ function App() {
           {/* aaaaaaaaaaaaaaaaaaaa */}
           <div id="threeButtonsSideBySide" className="ad-container">
             <div className="flex-row space-between">
-              <div className="ad-box">Best Dating Site</div>
-              <div className="ad-box">Get your partner in just 15 min</div>
-              <div className="ad-box">High Quality Dating Pool</div>
+              <div className="ad-box brand-dark-blue">
+                <h3 className="ad-box-text white-text">
+                  <span className="brand-yellow-text">Best</span> Dating Site
+                </h3>
+                <p className="ad-box-subtitle  white-text">
+                  Best way to meet your partner now!
+                </p>
+              </div>
+              <div className="ad-box brand-teal">
+                <h3 className="ad-box-text  white-text">
+                  Get your partner in just{" "}
+                  <span className="brand-yellow-text">15 min</span>
+                </h3>
+                <p className="ad-box-subtitle  white-text">
+                  Best way to meet your partner now!
+                </p>
+              </div>
+              <div className="ad-box brand-soft-blue">
+                <h3 className="ad-box-text  white-text">
+                  <span className="brand-yellow-text">Highest </span>Quality
+                  Dating Pool
+                </h3>
+                <p className="ad-box-subtitle white-text">
+                  2019 survey of 1,616 US singles!
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -114,19 +153,27 @@ function App() {
         </div>
         {/* ********** */}
         {/* ********** */}
-        <div style={{ height: "110vh" }}>
-          <div>
-            <h1>Compatibility counts!</h1>
-            <p>lorem ipsum doloret si</p>
-            <button>join now!</button>
+        <div id="compatibility-promo" className="">
+          <div id="compatibility-left" className="flex-col">
+            <div>
+              <h1>Compatibility counts!</h1>
+              <p>
+                lorem ipsum doloret si si massive wall of text asdfadsnfad nf
+                asdf a hey si massive wall of text asdfadsnfad nf asdf a hey
+                m83388838383 si massive wall of text asdfadsnfad nf asdf a hey
+                jffjfjfjfjfjf si massive wall of text asdfadsnfad nf asdf a hey
+              </p>
+              <button>join now!</button>
+            </div>
           </div>
+          <div id="compatibility-right" className=""></div>
         </div>
         <div style={{ "background-color": "#999", height: "70vh" }}>
           <div>
             <div>photos</div>
             <div>
               <h2>quality signles</h2>
-              <p>lorem ipsum doloret si</p>
+              <p>lorem ipsum doloret</p>
               <button>Join now!</button>
             </div>
           </div>
