@@ -1,8 +1,11 @@
 .ad-box {
-  height: 220px;
+  margin: 0 1px;
+  height: 260px;
   /* background-color: rgb(142, 155, 122); */
-  border: 3px solid black;
-  width: 32%;
+  /* border: 3px solid black; */
+  /* width: 32%; */
+  /* width: 33%; */
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,6 +40,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.b-debug {
+  border: 3px solid black !important;
 }
 
 .big-container-00 {
@@ -147,13 +154,15 @@ header * {
   /* align-items: stretch; */
 }
 
-/* rgb 0, 85, 255 */
-/* rgb 255, 230, 0 */
-/* rgb 0, 0, 0 */
-
 .header-options div {
   /* border: 3px solid blue; */
   width: 100px;
+}
+
+.img-placeholder {
+  height: 80px;
+  width: 80px;
+  border: 3px solid salmon;
 }
 
 .pretend-img {
@@ -213,6 +222,10 @@ header * {
   border-radius: 10px;
   height: 70px;
   width: 300px;
+  color: black;
+  font-size: 26px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #start-today-now-text {

@@ -1,6 +1,8 @@
 // import logo from "./logo.svg";
 import "./App.css";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+
 function App() {
   return (
     <div className="App">
@@ -45,12 +47,12 @@ function App() {
                   <h2 id="start-today-now-text">Start Today Now!</h2>
                   <hr />
                   <div>
-                    <div>
+                    <div className="my-4">
                       <h4 className="white-text">
                         The ideal family size is...
                       </h4>
-                      <div>
-                        <select id="family-size-input">
+                      <div className="my-3 d-flex justify-content-center align-items-center">
+                        <select id="family-size-input" className="mx-2">
                           <option className="option-centering">1</option>
                           <option className="option-centering">2</option>
                           <option className="option-centering">3</option>
@@ -59,7 +61,7 @@ function App() {
                           <option className="option-centering">6</option>
                           <option className="option-centering">7+</option>
                         </select>
-                        <span className="white-text">child</span>
+                        <span className="white-text mx-2">child</span>
                         {/* 1-6, 7+ */}
                       </div>
                     </div>
@@ -82,6 +84,7 @@ function App() {
           <div id="threeButtonsSideBySide" className="ad-container">
             <div className="flex-row space-between">
               <div className="ad-box brand-dark-blue">
+                <div className="img-placeholder"></div>
                 <h3 className="ad-box-text white-text">
                   <span className="brand-yellow-text">Best</span> Dating Site
                 </h3>
@@ -90,6 +93,7 @@ function App() {
                 </p>
               </div>
               <div className="ad-box brand-teal">
+                <div className="img-placeholder"></div>
                 <h3 className="ad-box-text  white-text">
                   Get your partner in just{" "}
                   <span className="brand-yellow-text">15 min</span>
@@ -99,6 +103,7 @@ function App() {
                 </p>
               </div>
               <div className="ad-box brand-soft-blue">
+                <div className="img-placeholder"></div>
                 <h3 className="ad-box-text  white-text">
                   <span className="brand-yellow-text">Highest </span>Quality
                   Dating Pool
@@ -127,7 +132,7 @@ function App() {
         {/* ********** */}
         {/* promotional boxes displaying stats */}
         {/* ********** */}
-        <div style={{ "background-color": "#999", height: "300px" }}>
+        <div style={{ backgroundColor: "#999", height: "300px" }}>
           <div className="promo-boxes-container">
             <div className="promo-box">
               <div className="pretend-img"></div>
@@ -168,7 +173,7 @@ function App() {
           </div>
           <div id="compatibility-right" className=""></div>
         </div>
-        <div style={{ "background-color": "#999", height: "70vh" }}>
+        <div style={{ backgroundColor: "#999", height: "70vh" }}>
           <div>
             <div>photos</div>
             <div>
@@ -178,7 +183,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ height: "60vh", "background-color": "#eeee" }}>
+        <div style={{ height: "60vh", backgroundColor: "#eeee" }}>
           <div>
             <div>
               <h2>We're here for you</h2>
@@ -200,7 +205,7 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ height: "70vh", "background-color": "#333" }}>
+        <div style={{ height: "70vh", backgroundColor: "#333" }}>
           <div>
             <div>
               <h3>web logo</h3>
