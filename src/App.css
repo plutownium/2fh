@@ -35,11 +35,20 @@
 }
 
 .App-header {
-  height: 140px;
+  height: 80px;
   background-color: rgb(0, 85, 255);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#App-header-button {
+  height: 40px;
+  width: 160px;
+  border-radius: 5px;
+  border: none;
+  color: black;
+  font-weight: bold;
 }
 
 .b-debug {
@@ -58,12 +67,24 @@
   background-color: rgb(97, 125, 198);
 }
 
+.brand-soft-blue-text {
+  color: rgb(97, 125, 198);
+}
+
 .brand-dark-blue {
   background-color: rgb(26, 95, 120);
 }
 
+.brand-dark-blue-text {
+  color: rgb(26, 95, 120);
+}
+
 .brand-yellow-bg {
   background-color: rgb(255, 230, 0);
+}
+
+.designer-blue-text {
+  color: rgb(0, 85, 255);
 }
 
 .brand-yellow-text {
@@ -84,9 +105,10 @@
 }
 
 #compatibility-right {
+  /* margin: 10px 0; */
   width: 30%;
-  border: 8px solid black;
-  height: 100%;
+  border: 1px solid black;
+  height: 90%;
 }
 
 #family-size-input {
@@ -136,7 +158,6 @@ header * {
 
 .header-main-spacing {
   width: 95%;
-  /* border: 2px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -144,19 +165,28 @@ header * {
 }
 
 .header-options {
-  /* border: 3px solid yellow; */
   width: 100%;
   display: flex;
-  /* width: 100%; */
-  /* flex-direction: row; */
   justify-content: space-around;
-
-  /* align-items: stretch; */
 }
 
 .header-options div {
-  /* border: 3px solid blue; */
   width: 100px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-options div h3 {
+  margin: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#hr-special {
+  width: 100%;
+  border: 1px solid white;
 }
 
 .img-placeholder {
@@ -172,12 +202,22 @@ header * {
 }
 
 .promo-box {
+  width: 18%;
+  margin: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 18%;
   border: 3px solid red;
+}
+
+.promo-box h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.promo-box p {
+  font-weight: 300;
 }
 
 .promo-boxes-container {
@@ -232,6 +272,30 @@ header * {
   color: white;
   font-size: 66px;
   margin: 0;
+}
+
+.typical-blue-button {
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: rgb(0, 85, 255);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#welcome-div-container {
+  height: 30%;
+  width: 60%;
+}
+
+#welcome-div-headline {
+  font-size: 44px;
+  font-weight: 600;
+}
+
+#welcome-div-content {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .white-text {

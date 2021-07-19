@@ -28,7 +28,9 @@ function App() {
                 <h3>Matches</h3>
               </div>
               <div className="generic-div-centering">
-                <button>LOGIN</button>
+                <button className="brand-yellow-bg" id="App-header-button">
+                  LOGIN
+                </button>
               </div>
             </div>
           </div>
@@ -43,9 +45,15 @@ function App() {
             <div className="sign-up-screen">
               <div className="screen-splitter"></div>
               <div className="screen-splitter">
-                <div id="start-today-now">
-                  <h2 id="start-today-now-text">Start Today Now!</h2>
-                  <hr />
+                <div
+                  id="start-today-now"
+                  className="d-flex flex-col justify-content-center align-items-center"
+                >
+                  <h2 id="start-today-now-text" className="stn-width">
+                    Start Today Now!
+                  </h2>
+                  <hr id="hr-special" className="stn-width" />
+                  {/* FIXME: why did this hr disappear? */}
                   <div>
                     <div className="my-4">
                       <h4 className="white-text">
@@ -61,7 +69,7 @@ function App() {
                           <option className="option-centering">6</option>
                           <option className="option-centering">7+</option>
                         </select>
-                        <span className="white-text mx-2">child</span>
+                        <span className="white-text mx-2">children</span>
                         {/* 1-6, 7+ */}
                       </div>
                     </div>
@@ -115,12 +123,20 @@ function App() {
             </div>
           </div>
         </div>
-        <div style={{ height: "70vh" }}>
+        <section
+          style={{ height: "70vh" }}
+          className="d-flex justify-content-center align-items-center"
+        >
           {/* for ze background: use an image, and scale it. */}
           {/* when on mobile, just use plain white, or a .. gradient maybe... */}
-          <div>
-            <h1>Best dating site ever!</h1>
-            <p>
+
+          {/* TODO: to reiterate, just clip out an img, set it as bg-img, and scale it for desktop/ipad */}
+          <div id="welcome-div-container">
+            <h1 id="welcome-div-headline">
+              Welcome to{" "}
+              <span className="designer-blue-text">TwoFatherHome</span>!
+            </h1>
+            <p id="welcome-div-content">
               we are the number one destination for online dating with more
               sites, more relationships, and more marriages than any other
               dating or personals site. We can help you find your perfect
@@ -128,7 +144,7 @@ function App() {
               of the largest databases of professional singles.
             </p>
           </div>
-        </div>
+        </section>
         {/* ********** */}
         {/* promotional boxes displaying stats */}
         {/* ********** */}
@@ -146,7 +162,7 @@ function App() {
             </div>
             <div className="promo-box">
               <div className="pretend-img"></div>
-              <h3>sites most likely to lead to happy relationships</h3>
+              <h3>site most likely to lead to happy relationships</h3>
               <p>could you be next?</p>
             </div>
             <div className="promo-box">
@@ -168,7 +184,7 @@ function App() {
                 m83388838383 si massive wall of text asdfadsnfad nf asdf a hey
                 jffjfjfjfjfjf si massive wall of text asdfadsnfad nf asdf a hey
               </p>
-              <button>join now!</button>
+              <button className="typical-blue-button">join now</button>
             </div>
           </div>
           <div id="compatibility-right" className=""></div>
