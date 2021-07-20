@@ -272,31 +272,39 @@ function App() {
         {/* **** */}
         {/* foot */}
         {/* foot */}
-        <section style={{ height: "70vh", backgroundColor: "#333" }}>
-          <div id="f-container" className="b-debug h-100">
+        <section style={{ height: "50vh", backgroundColor: "#dd9999" }}>
+          <div
+            id="f-container"
+            className="d-flex flex-col justify-content-center align-items-center h-100 b-debug"
+          >
             <div
               id="f-top"
-              className="d-flex flex-row justify-content-around m-6 b-debug"
+              className="d-flex flex-row justify-content-around align-items-center"
             >
-              <div id="f-logo" className="text-align-left">
+              <div id="f-logo" className="f-box text-align-left ">
                 <h3>web logo</h3>
-                <p id="petit-text">some text yo</p>
+                <p id="petit-text">
+                  some text yo. we are in fact sitting on a couch in a house
+                  that the residents have owned for over 31 years. the couch is
+                  located on Planet Earth in the star system of Sol. Empire of
+                  Pain, about the Sacklers, is on the table.
+                </p>
               </div>
-              <div id="f-quick-links" className="text-align-left">
+              <div id="f-quick-links" className="f-box text-align-left">
                 <h3>QUICK LINKS</h3>
                 <p>Home</p>
                 <p>Profile</p>
                 <p>Setting</p>
                 <p>Matches</p>
               </div>
-              <div id="f-pages" className="text-align-left">
+              <div id="f-pages" className="f-box text-align-left">
                 <h3>PAGES</h3>
                 <p>Privacy Policy</p>
                 <p>Terms and Conditions</p>
                 <p>Short Film</p>
                 <p>See All</p>
               </div>
-              <div>
+              <div id="f-newsletter">
                 <div>
                   <h3>Newsletter</h3>
                   <input />
@@ -306,6 +314,18 @@ function App() {
                   <button>Face</button>
                   <button>twtr</button>
                   <button>insta</button>
+                </div>
+              </div>
+            </div>
+            <div className="d-flex flex-col justify-content-center align-items-center w-100 h-25">
+              <hr id="f-hr" />
+              <div className="d-flex justify-content-between w-75">
+                <div>
+                  <p>Copyright 2021 TwoFatherHome</p>
+                </div>
+                <div>
+                  <span>Terms of Use</span>
+                  <span>Privacy Policy</span>
                 </div>
               </div>
             </div>

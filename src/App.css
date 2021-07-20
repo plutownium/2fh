@@ -116,16 +116,31 @@
   height: 90%;
 }
 
+#f-hr {
+  border: 1px solid black;
+  width: 75%;
+}
+
+#f-top {
+  width: 90%;
+  height: 60%;
+}
+
 #f-top h3 {
+  margin: 5px 0 8px 0;
   font-size: 16px;
   letter-spacing: 2px;
   color: blue;
 }
 
 #f-top p {
-  margin: 2px;
-  font-size: 14px;
+  margin: 3px;
+  font-size: 12px;
   color: white;
+}
+
+.f-box {
+  width: 15%;
 }
 
 #family-size-input {
