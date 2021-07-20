@@ -174,7 +174,7 @@ function App() {
         </div>
         {/* ********** */}
         {/* ********** */}
-        <div id="compatibility-promo" className="">
+        <section id="compatibility-promo" className="">
           <div id="compatibility-left" className="flex-col">
             <div>
               <h1>Compatibility counts!</h1>
@@ -188,30 +188,65 @@ function App() {
             </div>
           </div>
           <div id="compatibility-right" className=""></div>
-        </div>
-        <div style={{ backgroundColor: "#999", height: "70vh" }}>
-          <div>
-            <div>photos</div>
-            <div>
-              <h2>quality signles</h2>
-              <p>lorem ipsum doloret</p>
-              <button>Join now!</button>
+        </section>
+        <section style={{ backgroundColor: "#999", height: "70vh" }}>
+          <div className="d-flex h-100">
+            <div
+              id="quality-singles-left-spacer"
+              className="h-100 d-flex justify-content-center align-items-center"
+            >
+              photos
+            </div>
+            <div className="p-5">
+              <div
+                id="quality-singles-right"
+                className="ml-5 h-100 d-flex flex-col justify-content-center align-items-center"
+              >
+                <h2>quality singles</h2>
+                <p>
+                  lorem ipsum doloret Looking For A Meaningful Loving World
+                  where he can be a Family Man, and you can too.
+                </p>
+                <button className="typical-blue-button">Join now</button>
+              </div>
             </div>
           </div>
-        </div>
-        <div style={{ height: "60vh", backgroundColor: "#eeee" }}>
-          <div>
-            <div>
-              <h2>We're here for you</h2>
-              <p>adfadsf asdfadsfads asdfadsf</p>
-              <h4>24/7 support, 365</h4>
+        </section>
+        <section
+          style={{ height: "70vh", backgroundColor: "#bbb" }}
+          className="d-flex align-items-center justify-content-center"
+        >
+          <div
+            id="we-here-for-you"
+            className="b-debug d-flex flex-col justify-content-center align-items-center"
+          >
+            <div className="my-3">
+              <h2>
+                We're <span className="designer-blue-text">here for you</span>
+              </h2>
+            </div>
+            <div className="d-flex flex-col align-items-center justify-content-center">
+              <p id="whfy-width-control" className="b-debug">
+                adfadsf asdfadsfads asdfadsf wow look at all this text lorem
+                ipsum doloret si parler charmant charmante une chemise une jupe
+                vivre la france j'aime le travailler parce que je suis une homme
+                de bureau.
+              </p>
+              <h4 className="brand-yellow-text mb-5">
+                24/7 support, 365 days a year
+              </h4>
             </div>
             <div>
-              <button>contact us</button>
+              <button className="typical-blue-button typical-btn-sml-txt">
+                contact us
+              </button>
             </div>
           </div>
-        </div>
-        <div style={{ height: "80vh" }}>
+        </section>
+        {/* **** ***** ****** *****  */}
+        {/* the real deal */}
+        {/* **** ***** ****** *****  */}
+        <section style={{ height: "80vh" }}>
           <div>
             <div>image</div>
             <div>
@@ -220,8 +255,11 @@ function App() {
               <button>Join now!</button>
             </div>
           </div>
-        </div>
-        <div style={{ height: "70vh", backgroundColor: "#333" }}>
+        </section>
+        {/* **** */}
+        {/* foot */}
+        {/* foot */}
+        <section style={{ height: "70vh", backgroundColor: "#333" }}>
           <div>
             <div>
               <h3>web logo</h3>
@@ -246,7 +284,7 @@ function App() {
               <p></p>
             </div>
           </div>
-        </div>
+        </section>
       </main>
     </div>
   );
