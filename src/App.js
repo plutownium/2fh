@@ -27,6 +27,7 @@ function App() {
               <div>
                 <h3>Matches</h3>
               </div>
+              <div id="header-options-spacer"></div>
               <div className="generic-div-centering">
                 <button className="brand-yellow-bg" id="App-header-button">
                   LOGIN
@@ -54,13 +55,13 @@ function App() {
                   </h2>
                   <hr id="hr-special" className="stn-width" />
                   {/* FIXME: why did this hr disappear? */}
-                  <div>
-                    <div className="my-4">
+                  <div className="w-100">
+                    <div className="my-4 w-100">
                       <h4 className="white-text">
                         The ideal family size is...
                       </h4>
-                      <div className="my-3 d-flex flex-col justify-content-center align-items-center">
-                        <div className="d-flex flex-row justify-content-center align-items-center">
+                      <div className="my-3 d-flex flex-col justify-content-center align-items-center w-100">
+                        <div className="d-flex flex-row justify-content-between align-items-center w-100">
                           <div className="child-select-div">
                             <input
                               type="radio"
@@ -92,7 +93,7 @@ function App() {
                           </div>
                           {/* <br /> */}
                         </div>
-                        <div className="d-flex flex-row justify-content-center align-items-center">
+                        <div className="d-flex flex-row justify-content-between align-items-center w-100">
                           <div className="child-select-div">
                             <input
                               type="radio"

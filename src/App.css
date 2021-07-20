@@ -107,16 +107,19 @@ input {
 }
 
 .child-select-div {
-  /* border: 2px solid yellow; */
+  /* border: 5px solid yellow; */
   height: 50px;
   width: 120px;
-  margin: 10px 10px 5px 10px;
+  margin: 10px 0px;
   padding-left: 10px;
   display: flex;
   justify-content: left;
   align-items: center;
   background-color: white;
   border-radius: 6px;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 
 .child-select-div input {
@@ -243,7 +246,7 @@ header * {
 
 .header-options div {
   width: 100px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,6 +256,10 @@ header * {
   margin: 0;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+#header-options-spacer {
+  width: 40px;
 }
 
 #hr-special {
@@ -295,7 +302,7 @@ header * {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   height: 100%;
 }
 
@@ -325,7 +332,7 @@ header * {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 3px solid green;
+  /* border: 3px solid green; */
 }
 
 .sign-up-screen {
@@ -336,18 +343,18 @@ header * {
   flex-direction: row;
 }
 
-.sign-up-screen > div {
+/* .sign-up-screen > div {
   border: 3px solid red;
-}
+} */
 
 .space-between {
   justify-content: space-between;
 }
 
 #start-today-now {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   height: 80%;
-  width: 80%;
+  width: 70%;
 }
 
 #start-today-now-button {
