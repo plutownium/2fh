@@ -116,6 +116,18 @@
   height: 90%;
 }
 
+#f-top h3 {
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: blue;
+}
+
+#f-top p {
+  margin: 2px;
+  font-size: 14px;
+  color: white;
+}
+
 #family-size-input {
   height: 60px;
   width: 200px;
@@ -303,6 +315,10 @@ header * {
   color: white;
   font-size: 66px;
   margin: 0;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 .typical-blue-button {

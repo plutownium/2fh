@@ -273,28 +273,41 @@ function App() {
         {/* foot */}
         {/* foot */}
         <section style={{ height: "70vh", backgroundColor: "#333" }}>
-          <div>
-            <div>
-              <h3>web logo</h3>
-              <p>some text yo</p>
-            </div>
-            <div>
-              <h3>web logo</h3>
-              <p>
-                cats dogs bark meow kitty kitty laceholder green yellow white
-                marmalade
-              </p>
-            </div>
-            <div>
-              <h3>web logo</h3>
-              <p>
-                keyboard black green red white yellow orange black circle square
-                need moar words
-              </p>
-            </div>
-            <div>
-              <h3>web logo</h3>
-              <p></p>
+          <div id="f-container" className="b-debug h-100">
+            <div
+              id="f-top"
+              className="d-flex flex-row justify-content-around m-6 b-debug"
+            >
+              <div id="f-logo" className="text-align-left">
+                <h3>web logo</h3>
+                <p id="petit-text">some text yo</p>
+              </div>
+              <div id="f-quick-links" className="text-align-left">
+                <h3>QUICK LINKS</h3>
+                <p>Home</p>
+                <p>Profile</p>
+                <p>Setting</p>
+                <p>Matches</p>
+              </div>
+              <div id="f-pages" className="text-align-left">
+                <h3>PAGES</h3>
+                <p>Privacy Policy</p>
+                <p>Terms and Conditions</p>
+                <p>Short Film</p>
+                <p>See All</p>
+              </div>
+              <div>
+                <div>
+                  <h3>Newsletter</h3>
+                  <input />
+                  <p>Subscribe for updates</p>
+                </div>
+                <div>
+                  <button>Face</button>
+                  <button>twtr</button>
+                  <button>insta</button>
+                </div>
+              </div>
             </div>
           </div>
         </section>
