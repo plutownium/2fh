@@ -136,7 +136,7 @@ function App() {
               Welcome to{" "}
               <span className="designer-blue-text">TwoFatherHome</span>!
             </h1>
-            <p id="welcome-div-content">
+            <p id="welcome-div-content" className="content-text">
               we are the number one destination for online dating with more
               sites, more relationships, and more marriages than any other
               dating or personals site. We can help you find your perfect
@@ -178,7 +178,7 @@ function App() {
           <div id="compatibility-left" className="flex-col">
             <div>
               <h1>Compatibility counts!</h1>
-              <p>
+              <p className="content-text">
                 lorem ipsum doloret si si massive wall of text asdfadsnfad nf
                 asdf a hey si massive wall of text asdfadsnfad nf asdf a hey
                 m83388838383 si massive wall of text asdfadsnfad nf asdf a hey
@@ -203,7 +203,7 @@ function App() {
                 className="ml-5 h-100 d-flex flex-col justify-content-center align-items-center"
               >
                 <h2>quality singles</h2>
-                <p>
+                <p className="content-text">
                   lorem ipsum doloret Looking For A Meaningful Loving World
                   where he can be a Family Man, and you can too.
                 </p>
@@ -221,12 +221,12 @@ function App() {
             className="b-debug d-flex flex-col justify-content-center align-items-center"
           >
             <div className="my-3">
-              <h2>
+              <h2 className="fat-text">
                 We're <span className="designer-blue-text">here for you</span>
               </h2>
             </div>
             <div className="d-flex flex-col align-items-center justify-content-center">
-              <p id="whfy-width-control" className="b-debug">
+              <p id="whfy-width-control" className="b-debug content-text">
                 adfadsf asdfadsfads asdfadsf wow look at all this text lorem
                 ipsum doloret si parler charmant charmante une chemise une jupe
                 vivre la france j'aime le travailler parce que je suis une homme
@@ -247,12 +247,25 @@ function App() {
         {/* the real deal */}
         {/* **** ***** ****** *****  */}
         <section style={{ height: "80vh" }}>
-          <div>
-            <div>image</div>
-            <div>
-              <h2>The real deal!</h2>
-              <p>lorem placeodlssadf</p>
-              <button>Join now!</button>
+          <div className="d-flex h-100">
+            <div id="real-deal-left" className="b-debug h-100">
+              image
+            </div>
+            <div
+              id="real-deal-right"
+              className="b-debug h-100 d-flex flex-col justify-content-center"
+            >
+              <div className="my-4">
+                <h2 className="fat-text">The Real Deal</h2>
+              </div>
+              <div className="w-75">
+                <p className="content-text">
+                  Over the course of our 20+ years in the relationship business,
+                  millions of couples have found lasting love. Give us a try
+                  when you're ready for something real.
+                </p>
+              </div>
+              <button className="typical-blue-button my-4">Join now</button>
             </div>
           </div>
         </section>

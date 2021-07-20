@@ -91,6 +91,11 @@
   color: rgb(255, 230, 0);
 }
 
+.content-text {
+  font-size: 18px;
+  font-weight: 400;
+}
+
 #compatibility-promo {
   height: 80vh;
   display: flex;
@@ -119,6 +124,11 @@
 
 .option-centering {
   text-align: center;
+}
+
+.fat-text {
+  font-size: 44px;
+  font-weight: 600;
 }
 
 .flex-col {
@@ -238,6 +248,15 @@ header * {
 
 #quality-singles-right {
   width: 52%;
+}
+
+#real-deal-left {
+  width: 55%;
+}
+
+#real-deal-right {
+  width: 45%;
+  text-align: left;
 }
 
 .screen-splitter {
