@@ -59,17 +59,72 @@ function App() {
                       <h4 className="white-text">
                         The ideal family size is...
                       </h4>
-                      <div className="my-3 d-flex justify-content-center align-items-center">
-                        <select id="family-size-input" className="mx-2">
-                          <option className="option-centering">1</option>
-                          <option className="option-centering">2</option>
-                          <option className="option-centering">3</option>
-                          <option className="option-centering">4</option>
-                          <option className="option-centering">5</option>
-                          <option className="option-centering">6</option>
-                          <option className="option-centering">7+</option>
-                        </select>
-                        <span className="white-text mx-2">children</span>
+                      <div className="my-3 d-flex flex-col justify-content-center align-items-center">
+                        <div className="d-flex flex-row justify-content-center align-items-center">
+                          <div className="child-select-div">
+                            <input
+                              type="radio"
+                              id="ch1"
+                              name="children"
+                              value="1"
+                            />
+                            <label for="ch1">1 child</label>
+                          </div>
+                          {/* <br /> */}
+                          <div className="child-select-div">
+                            <input
+                              type="radio"
+                              id="ch2"
+                              name="children"
+                              value="2"
+                            />
+                            <label for="ch2">2 children</label>
+                            {/* <br /> */}
+                          </div>
+                          <div className="child-select-div">
+                            <input
+                              type="radio"
+                              id="ch3"
+                              name="children"
+                              value="3"
+                            />
+                            <label for="ch3">3 children</label>
+                          </div>
+                          {/* <br /> */}
+                        </div>
+                        <div className="d-flex flex-row justify-content-center align-items-center">
+                          <div className="child-select-div">
+                            <input
+                              type="radio"
+                              id="ch4"
+                              name="children"
+                              value="4"
+                            />
+                            <label for="ch4">4 children</label>
+                          </div>
+                          {/* <br /> */}
+                          <div className="child-select-div">
+                            <input
+                              type="radio"
+                              id="ch5"
+                              name="children"
+                              value="5"
+                            />
+                            <label for="ch5">5 children</label>
+                          </div>
+                          {/* <br /> */}
+                          <div className="child-select-div">
+                            <input
+                              type="radio"
+                              id="ch6"
+                              name="children"
+                              value="6+"
+                            />
+                            <label for="ch6">6+ children</label>
+                          </div>
+                          {/* <br /> */}
+                        </div>
+                        {/* <span className="white-text mx-2">children</span> */}
                         {/* 1-6, 7+ */}
                       </div>
                     </div>
@@ -323,7 +378,7 @@ function App() {
                 <div>
                   <p>Copyright 2021 TwoFatherHome</p>
                 </div>
-                <div>
+                <div className="d-flex flex-row justify-content-between w-25 ">
                   <span>Terms of Use</span>
                   <span>Privacy Policy</span>
                 </div>

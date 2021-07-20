@@ -1,3 +1,8 @@
+input {
+  margin: 0 10px;
+  border: 3px solid red;
+}
+
 .ad-box {
   margin: 0 1px;
   height: 260px;
@@ -89,6 +94,35 @@
 
 .brand-yellow-text {
   color: rgb(255, 230, 0);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.child-select-div {
+  /* border: 2px solid yellow; */
+  height: 50px;
+  width: 120px;
+  margin: 10px 10px 5px 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.child-select-div input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .content-text {
