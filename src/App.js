@@ -283,22 +283,23 @@ function App() {
           style={{ height: "70vh" }}
           className="d-flex align-items-center justify-content-center wholesome-background"
         >
-          <div className="h-100 d-flex flex-col justify-content-center align-items-center wholesome-overlay">
+          <div className="w-100 h-100 d-flex flex-col justify-content-center align-items-center wholesome-overlay">
             <div
               id="we-here-for-you"
               className="d-flex flex-col justify-content-center align-items-center"
             >
               <div className="my-3">
-                <h2 className="fat-text">
-                  We're <span className="designer-blue-text">here for you</span>
+                <h2 className="fat-text white-text">
+                  <span className="designer-blue-text">We're</span>{" "}
+                  <span className=" white-text">here for you</span>
                 </h2>
               </div>
               <div className="d-flex flex-col align-items-center justify-content-center">
-                <p id="whfy-width-control" className="content-text">
-                  adfadsf asdfadsfads asdfadsf wow look at all this text lorem
-                  ipsum doloret si parler charmant charmante une chemise une
-                  jupe vivre la france j'aime le travailler parce que je suis
-                  une homme de bureau.
+                <p id="whfy-width-control" className="content-text white-text">
+                  Signing up for this website is the first step to finding the
+                  husband you'll start a family with. From profile tips to
+                  sharing your success story, we are here to support you the
+                  whole way.
                 </p>
                 <h4 className="brand-yellow-text mb-5">
                   24/7 support, 365 days a year

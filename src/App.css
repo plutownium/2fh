@@ -449,12 +449,12 @@ header * {
   width: 80%;
   text-align: center;
   z-index: 5;
-  opacity: 1;
+  /* opacity: 1 !important; */
 }
 
-#we-here-for-you {
+#we-here-for-you * {
   z-index: 5;
-  opacity: 1;
+  /* opacity: 1 !important; */
 }
 
 .white-text {
@@ -471,7 +471,7 @@ header * {
 }
 
 .wholesome-overlay {
-  background: black;
-  opacity: 90%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* opacity: 0.5; */
   z-index: 2;
 }
