@@ -96,20 +96,32 @@ input {
   color: rgb(255, 230, 0);
 }
 
+.brand-grey {
+  background-color: rgb(228, 228, 228);
+}
+
 .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  margin: 0 10px 0 5px;
+  background-color: #dde;
   border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.child-select-div:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.child-select-div input:checked ~ .checkmark {
+  background-color: #2196f3;
 }
 
 .child-select-div {
   /* border: 5px solid yellow; */
   height: 50px;
-  width: 120px;
+  width: 155px;
   margin: 10px 0px;
   padding-left: 10px;
   display: flex;
@@ -117,9 +129,9 @@ input {
   align-items: center;
   background-color: white;
   border-radius: 6px;
-  -webkit-box-shadow: 0 8px 6px -6px black;
-  -moz-box-shadow: 0 8px 6px -6px black;
-  box-shadow: 0 8px 6px -6px black;
+  -webkit-box-shadow: 0 9px 12px -6px black;
+  -moz-box-shadow: 0 9px 12px -6px black;
+  box-shadow: 0 9px 12px -6px black;
 }
 
 .child-select-div input {
@@ -143,14 +155,17 @@ input {
 
 #compatibility-left {
   width: 40%;
-  border: 3px solid blue;
+  /* border: 3px solid blue; */
+  text-align: left;
 }
 
 #compatibility-right {
   /* margin: 10px 0; */
-  width: 30%;
-  border: 1px solid black;
+  width: 40%;
+  /* border: 1px solid black; */
   height: 90%;
+  background-image: url("./assets/compatibility-cutout.png");
+  background-size: cover;
 }
 
 #f-hr {
@@ -280,13 +295,13 @@ header * {
 }
 
 .promo-box {
-  width: 18%;
+  width: 17%;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px solid red;
+  /* border: 3px solid red; */
 }
 
 .promo-box h3 {
@@ -304,18 +319,29 @@ header * {
   justify-content: center;
   /* border: 3px solid green; */
   height: 100%;
+  background-color: rgb(228, 228, 228);
 }
 
 .qss-mods {
   height: 100%;
 }
 
-#quality-singles-left-spacer {
-  width: 48%;
+#quality-singles-left-img {
+  width: 550px;
+  background-image: url("./assets/quality-singles-cutouut.png");
+  background-size: contain;
 }
 
 #quality-singles-right {
-  width: 52%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#quality-singles-right * {
+  /* border: 3px solid red; */
+  text-align: left;
 }
 
 #real-deal-left {
@@ -360,11 +386,14 @@ header * {
 #start-today-now-button {
   border-radius: 10px;
   height: 70px;
-  width: 300px;
+  width: 100%;
   color: black;
   font-size: 26px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
+  -webkit-box-shadow: 0 9px 12px -6px black;
+  -moz-box-shadow: 0 9px 12px -6px black;
+  box-shadow: 0 9px 12px -6px black;
 }
 
 #start-today-now-text {
@@ -387,6 +416,7 @@ header * {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+  text-align: center !important;
   box-shadow: 5px 3px 15px blue;
 }
 

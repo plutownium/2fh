@@ -63,65 +63,71 @@ function App() {
                       <div className="my-3 d-flex flex-col justify-content-center align-items-center w-100">
                         <div className="d-flex flex-row justify-content-between align-items-center w-100">
                           <div className="child-select-div">
+                            <span className="checkmark"></span>
                             <input
                               type="radio"
                               id="ch1"
                               name="children"
                               value="1"
                             />
-                            <label for="ch1">1 child</label>
+                            <label htmlFor="ch1">1 child</label>
                           </div>
                           {/* <br /> */}
                           <div className="child-select-div">
+                            <span className="checkmark"></span>
                             <input
                               type="radio"
                               id="ch2"
                               name="children"
                               value="2"
                             />
-                            <label for="ch2">2 children</label>
+                            <label htmlFor="ch2">2 children</label>
                             {/* <br /> */}
                           </div>
                           <div className="child-select-div">
+                            <span className="checkmark"></span>
                             <input
                               type="radio"
                               id="ch3"
                               name="children"
                               value="3"
                             />
-                            <label for="ch3">3 children</label>
+                            <label htmlFor="ch3">3 children</label>
                           </div>
                           {/* <br /> */}
                         </div>
                         <div className="d-flex flex-row justify-content-between align-items-center w-100">
                           <div className="child-select-div">
+                            <span className="checkmark"></span>
                             <input
                               type="radio"
                               id="ch4"
                               name="children"
                               value="4"
                             />
-                            <label for="ch4">4 children</label>
+                            <label htmlFor="ch4">4 children</label>
                           </div>
                           {/* <br /> */}
                           <div className="child-select-div">
+                            <span className="checkmark"></span>
                             <input
                               type="radio"
                               id="ch5"
                               name="children"
                               value="5"
                             />
-                            <label for="ch5">5 children</label>
+                            <label htmlFor="ch5">5 children</label>
                           </div>
                           {/* <br /> */}
                           <div className="child-select-div">
+                            <span className="checkmark"></span>
                             <input
                               type="radio"
                               id="ch6"
                               name="children"
                               value="6+"
                             />
-                            <label for="ch6">6+ children</label>
+                            <label htmlFor="ch6">6+ children</label>
                           </div>
                           {/* <br /> */}
                         </div>
@@ -190,10 +196,10 @@ function App() {
           <div id="welcome-div-container">
             <h1 id="welcome-div-headline">
               Welcome to{" "}
-              <span className="designer-blue-text">TwoFatherHome</span>!
+              <span className="designer-blue-text">TwoFatherHome</span>
             </h1>
             <p id="welcome-div-content" className="content-text">
-              we are the number one destination for online dating with more
+              We are the number one destination for online dating with more
               sites, more relationships, and more marriages than any other
               dating or personals site. We can help you find your perfect
               partner. We offer a bespoke, highly personalized service and one
@@ -204,11 +210,14 @@ function App() {
         {/* ********** */}
         {/* promotional boxes displaying stats */}
         {/* ********** */}
-        <div style={{ backgroundColor: "#999", height: "300px" }}>
+        <div style={{ height: "300px" }}>
           <div className="promo-boxes-container">
             <div className="promo-box">
               <div className="pretend-img"></div>
-              <h3>over 2 million found love!</h3>
+              <h3>
+                over 2 million <br />
+                found love!
+              </h3>
               <p>could you be next?</p>
             </div>
             <div className="promo-box">
@@ -233,37 +242,39 @@ function App() {
         <section id="compatibility-promo" className="">
           <div id="compatibility-left" className="flex-col">
             <div>
-              <h1>Compatibility counts!</h1>
+              <h1 className="my-4">Compatibility Counts</h1>
               <p className="content-text">
-                lorem ipsum doloret si si massive wall of text asdfadsnfad nf
-                asdf a hey si massive wall of text asdfadsnfad nf asdf a hey
-                m83388838383 si massive wall of text asdfadsnfad nf asdf a hey
-                jffjfjfjfjfjf si massive wall of text asdfadsnfad nf asdf a hey
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pharetra et ultrices neque ornare. Tortor vitae purus faucibus
+                ornare suspendisse sed nisi. Proin nibh nisl condimentum id
+                venenatis a condimentum vitae.
               </p>
-              <button className="typical-blue-button">join now</button>
+              <button className="my-4 typical-blue-button">join now</button>
             </div>
           </div>
           <div id="compatibility-right" className=""></div>
         </section>
-        <section style={{ backgroundColor: "#999", height: "70vh" }}>
-          <div className="d-flex h-100">
-            <div
-              id="quality-singles-left-spacer"
-              className="h-100 d-flex justify-content-center align-items-center"
-            >
-              photos
+        <section
+          style={{ height: "90vh" }}
+          className="brand-grey d-flex align-items-center"
+        >
+          <div className="d-flex h-75 w-100 justify-content-center align-items-center">
+            <div className="h-100 w-50 d-flex align-items-right justify-content-end">
+              <div id="quality-singles-left-img" className="h-100"></div>
             </div>
-            <div className="p-5">
-              <div
-                id="quality-singles-right"
-                className="ml-5 h-100 d-flex flex-col justify-content-center align-items-center"
-              >
-                <h2>quality singles</h2>
-                <p className="content-text">
-                  lorem ipsum doloret Looking For A Meaningful Loving World
-                  where he can be a Family Man, and you can too.
-                </p>
-                <button className="typical-blue-button">Join now</button>
+            <div className="w-50">
+              <div className="w-100">
+                <div id="quality-singles-right" className="h-100">
+                  <h2 className="my-4">Quality Singles, Just Like You</h2>
+                  <p className="content-text">
+                    Looking for a meaningful, loving world, where he can be a
+                    family man, and you can too. You can have complete
+                    confidence that everyone on this site is looking to start a
+                    family, just like you are.
+                  </p>
+                  <button className="typical-blue-button my-4">Join now</button>
+                </div>
               </div>
             </div>
           </div>
