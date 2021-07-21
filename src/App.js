@@ -280,33 +280,35 @@ function App() {
           </div>
         </section>
         <section
-          style={{ height: "70vh", backgroundColor: "#bbb" }}
-          className="d-flex align-items-center justify-content-center"
+          style={{ height: "70vh" }}
+          className="d-flex align-items-center justify-content-center wholesome-background"
         >
-          <div
-            id="we-here-for-you"
-            className="b-debug d-flex flex-col justify-content-center align-items-center"
-          >
-            <div className="my-3">
-              <h2 className="fat-text">
-                We're <span className="designer-blue-text">here for you</span>
-              </h2>
-            </div>
-            <div className="d-flex flex-col align-items-center justify-content-center">
-              <p id="whfy-width-control" className="b-debug content-text">
-                adfadsf asdfadsfads asdfadsf wow look at all this text lorem
-                ipsum doloret si parler charmant charmante une chemise une jupe
-                vivre la france j'aime le travailler parce que je suis une homme
-                de bureau.
-              </p>
-              <h4 className="brand-yellow-text mb-5">
-                24/7 support, 365 days a year
-              </h4>
-            </div>
-            <div>
-              <button className="typical-blue-button typical-btn-sml-txt">
-                contact us
-              </button>
+          <div className="h-100 d-flex flex-col justify-content-center align-items-center wholesome-overlay">
+            <div
+              id="we-here-for-you"
+              className="d-flex flex-col justify-content-center align-items-center"
+            >
+              <div className="my-3">
+                <h2 className="fat-text">
+                  We're <span className="designer-blue-text">here for you</span>
+                </h2>
+              </div>
+              <div className="d-flex flex-col align-items-center justify-content-center">
+                <p id="whfy-width-control" className="content-text">
+                  adfadsf asdfadsfads asdfadsf wow look at all this text lorem
+                  ipsum doloret si parler charmant charmante une chemise une
+                  jupe vivre la france j'aime le travailler parce que je suis
+                  une homme de bureau.
+                </p>
+                <h4 className="brand-yellow-text mb-5">
+                  24/7 support, 365 days a year
+                </h4>
+              </div>
+              <div>
+                <button className="typical-blue-button typical-btn-sml-txt">
+                  contact us
+                </button>
+              </div>
             </div>
           </div>
         </section>

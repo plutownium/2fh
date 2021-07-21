@@ -448,8 +448,30 @@ header * {
   height: 80%;
   width: 80%;
   text-align: center;
+  z-index: 5;
+  opacity: 1;
+}
+
+#we-here-for-you {
+  z-index: 5;
+  opacity: 1;
 }
 
 .white-text {
   color: white;
+}
+
+.wholesome-background {
+  z-index: 1;
+  background-size: 100% 100%;
+  /* opacity: 50%; */
+  background-image: url("./assets/wholesome-gay-couple.png");
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+  /* url("./assets//wholesome-gay-couple.png"); */
+}
+
+.wholesome-overlay {
+  background: black;
+  opacity: 90%;
+  z-index: 2;
 }
