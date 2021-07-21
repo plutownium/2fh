@@ -60,8 +60,17 @@ input {
   border: 3px solid black !important;
 }
 
+.b-debug2 {
+  border: 5px solid red !important;
+}
+
 .big-container-00 {
   height: 80vh;
+}
+
+.big-text {
+  font-size: 42px;
+  font-weight: 600;
 }
 
 .brand-teal {
@@ -168,9 +177,29 @@ input {
   background-size: cover;
 }
 
+.f-box {
+  width: 15%;
+  /* border: 2px solid green; */
+}
+
+.f-box h3 {
+  margin-bottom: 8px;
+}
+
 #f-hr {
   border: 1px solid black;
   width: 75%;
+}
+
+#f-newsletter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.f-spacer {
+  height: 30px;
 }
 
 #f-top {
@@ -191,8 +220,8 @@ input {
   color: white;
 }
 
-.f-box {
-  width: 15%;
+.f-wholesome {
+  background-image: url("./assets/2fh-placeholder-footer.png");
 }
 
 #family-size-input {
@@ -208,6 +237,10 @@ input {
 .fat-text {
   font-size: 44px;
   font-weight: 600;
+}
+
+.f-grey-text {
+  color: #666;
 }
 
 .flex-col {
@@ -288,6 +321,20 @@ header * {
   border: 3px solid salmon;
 }
 
+#newsletter-div {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left; */
+  text-align: left;
+}
+
+#newsletter-div input {
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  border: none;
+}
+
 .pretend-img {
   height: 80px;
   width: 80px;
@@ -327,7 +374,7 @@ header * {
 }
 
 #quality-singles-left-img {
-  width: 550px;
+  width: 500px;
   background-image: url("./assets/quality-singles-cutouut.png");
   background-size: contain;
 }
@@ -346,6 +393,13 @@ header * {
 
 #real-deal-left {
   width: 55%;
+}
+
+#real-deal-left-img {
+  margin-right: 35px;
+  width: 80%;
+  background-image: url("./assets//diamond-tiles.png");
+  background-size: 100% 100%;
 }
 
 #real-deal-right {
@@ -375,6 +429,20 @@ header * {
 
 .space-between {
   justify-content: space-between;
+}
+
+#socials-div {
+  height: 70px;
+  /* border: 3px solid cyan; */
+  display: flex;
+  justify-content: left;
+}
+
+#socials-div button {
+  height: 50px;
+  width: 50px;
+  margin-right: 6 px;
+  border-radius: 25px;
 }
 
 #start-today-now {
@@ -461,6 +529,10 @@ header * {
   color: white;
 }
 
+.white-text-off {
+  color: #ccc;
+}
+
 .wholesome-background {
   z-index: 1;
   background-size: 100% 100%;
@@ -471,7 +543,12 @@ header * {
 }
 
 .wholesome-overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.75);
+  /* opacity: 0.5; */
+  z-index: 2;
+}
+.wholesome-overlay-dark {
+  background-color: rgba(0, 0, 0, 0.9);
   /* opacity: 0.5; */
   z-index: 2;
 }

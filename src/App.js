@@ -242,7 +242,7 @@ function App() {
         <section id="compatibility-promo" className="">
           <div id="compatibility-left" className="flex-col">
             <div>
-              <h1 className="my-4">Compatibility Counts</h1>
+              <h2 className="my-4 big-text">Compatibility Counts</h2>
               <p className="content-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -266,7 +266,9 @@ function App() {
             <div className="w-50">
               <div className="w-100">
                 <div id="quality-singles-right" className="h-100">
-                  <h2 className="my-4">Quality Singles, Just Like You</h2>
+                  <h2 className="my-4 big-text">
+                    Quality Singles, Just Like You
+                  </h2>
                   <p className="content-text">
                     Looking for a meaningful, loving world, where he can be a
                     family man, and you can too. You can have complete
@@ -291,7 +293,7 @@ function App() {
               <div className="my-3">
                 <h2 className="fat-text white-text">
                   <span className="designer-blue-text">We're</span>{" "}
-                  <span className=" white-text">here for you</span>
+                  <span className=" white-text">Here For You</span>
                 </h2>
               </div>
               <div className="d-flex flex-col align-items-center justify-content-center">
@@ -318,12 +320,15 @@ function App() {
         {/* **** ***** ****** *****  */}
         <section style={{ height: "80vh" }}>
           <div className="d-flex h-100">
-            <div id="real-deal-left" className="b-debug h-100">
-              image
+            <div
+              id="real-deal-left"
+              className="h-100 d-flex justify-content-end align-items-center"
+            >
+              <div id="real-deal-left-img" className="h-75"></div>
             </div>
             <div
               id="real-deal-right"
-              className="b-debug h-100 d-flex flex-col justify-content-center"
+              className="h-100 d-flex flex-col justify-content-center"
             >
               <div className="my-4">
                 <h2 className="fat-text">The Real Deal</h2>
@@ -342,16 +347,17 @@ function App() {
         {/* **** */}
         {/* foot */}
         {/* foot */}
-        <section style={{ height: "50vh", backgroundColor: "#dd9999" }}>
+        <section style={{ height: "50vh" }} className="f-wholesome">
           <div
             id="f-container"
-            className="d-flex flex-col justify-content-center align-items-center h-100 b-debug"
+            className="d-flex flex-col justify-content-center align-items-center h-100 wholesome-overlay-dark"
           >
             <div
               id="f-top"
-              className="d-flex flex-row justify-content-around align-items-center"
+              className="d-flex flex-row justify-content-around align-items-start"
             >
               <div id="f-logo" className="f-box text-align-left ">
+                <div className="f-spacer"></div>
                 <h3>web logo</h3>
                 <p id="petit-text">
                   some text yo. we are in fact sitting on a couch in a house
@@ -361,6 +367,7 @@ function App() {
                 </p>
               </div>
               <div id="f-quick-links" className="f-box text-align-left">
+                <div className="f-spacer"></div>
                 <h3>QUICK LINKS</h3>
                 <p>Home</p>
                 <p>Profile</p>
@@ -368,19 +375,20 @@ function App() {
                 <p>Matches</p>
               </div>
               <div id="f-pages" className="f-box text-align-left">
+                <div className="f-spacer"></div>
                 <h3>PAGES</h3>
                 <p>Privacy Policy</p>
                 <p>Terms and Conditions</p>
                 <p>Short Film</p>
                 <p>See All</p>
               </div>
-              <div id="f-newsletter">
-                <div>
+              <div id="f-newsletter" className="b-debug">
+                <div id="newsletter-div">
                   <h3>Newsletter</h3>
                   <input />
                   <p>Subscribe for updates</p>
                 </div>
-                <div>
+                <div id="socials-div">
                   <button>Face</button>
                   <button>twtr</button>
                   <button>insta</button>
@@ -391,11 +399,11 @@ function App() {
               <hr id="f-hr" />
               <div className="d-flex justify-content-between w-75">
                 <div>
-                  <p>Copyright 2021 TwoFatherHome</p>
+                  <p className="f-grey-text">Copyright 2021 TwoFatherHome</p>
                 </div>
                 <div className="d-flex flex-row justify-content-between w-25 ">
-                  <span>Terms of Use</span>
-                  <span>Privacy Policy</span>
+                  <span className="white-text-off">Terms of Use</span>
+                  <span className="white-text-off">Privacy Policy</span>
                 </div>
               </div>
             </div>
