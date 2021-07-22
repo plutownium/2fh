@@ -3,6 +3,22 @@ input {
   border: 3px solid red;
 }
 
+#ad-box-left {
+  background-image: url("./assets/icons/left.png");
+  background-size: 100% 100%;
+  /* height:  */
+}
+
+#ad-box-middle {
+  background-image: url("./assets/icons/right.png");
+  background-size: 100% 100%;
+}
+
+#ad-box-right {
+  background-image: url("./assets/icons/middle.png");
+  background-size: 100% 100%;
+}
+
 .ad-box {
   margin: 0 1px;
   height: 260px;
@@ -318,7 +334,7 @@ header * {
 .img-placeholder {
   height: 80px;
   width: 80px;
-  border: 3px solid salmon;
+  /* border: 3px solid salmon; */
 }
 
 #newsletter-div {
@@ -417,7 +433,12 @@ header * {
 
 .sign-up-screen {
   width: 100%;
-  background-image: url("./assets/real\ family\ photos/sunny-lake-adventure2-flipped.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(245, 246, 252, 0.12),
+      rgba(22, 58, 179, 0.83)
+    ),
+    url("./assets/real\ family\ photos/sunny-lake-adventure2-flipped.jpg");
   background-size: 100% 100%;
   height: 80vh;
   display: flex;

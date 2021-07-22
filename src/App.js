@@ -44,7 +44,7 @@ function App() {
           {/* aaaaaaaaaaaaaaaaaaaa */}
 
           <div id="thePartWithThePicture" className="big-container-00">
-            <div id="start-today-now-gradient" className="wholesome-overlay">
+            <div id="start-today-now-gradient" className="">
               <div className="sign-up-screen">
                 <div className="screen-splitter"></div>
                 <div className="screen-splitter">
@@ -157,7 +157,7 @@ function App() {
           <div id="threeButtonsSideBySide" className="ad-container">
             <div className="flex-row space-between">
               <div className="ad-box brand-dark-blue">
-                <div className="img-placeholder"></div>
+                <div className="img-placeholder" id="ad-box-left"></div>
                 <h3 className="ad-box-text white-text">
                   <span className="brand-yellow-text">Best</span> Dating Site
                 </h3>
@@ -166,7 +166,7 @@ function App() {
                 </p>
               </div>
               <div className="ad-box brand-teal">
-                <div className="img-placeholder"></div>
+                <div className="img-placeholder" id="ad-box-middle"></div>
                 <h3 className="ad-box-text  white-text">
                   Get your partner in just{" "}
                   <span className="brand-yellow-text">15 min</span>
@@ -176,7 +176,7 @@ function App() {
                 </p>
               </div>
               <div className="ad-box brand-soft-blue">
-                <div className="img-placeholder"></div>
+                <div className="img-placeholder" id="ad-box-right"></div>
                 <h3 className="ad-box-text  white-text">
                   <span className="brand-yellow-text">Highest </span>Quality
                   Dating Pool
