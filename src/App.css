@@ -221,7 +221,7 @@ input {
 }
 
 .f-wholesome {
-  background-image: url("./assets/2fh-placeholder-footer.png");
+  background-image: url("./assets/real family photos/2fh-placeholder-footer.png");
 }
 
 #family-size-input {
@@ -417,7 +417,8 @@ header * {
 
 .sign-up-screen {
   width: 100%;
-  background-color: blueviolet;
+  background-image: url("./assets/real\ family\ photos/sunny-lake-adventure2-flipped.jpg");
+  background-size: 100% 100%;
   height: 80vh;
   display: flex;
   flex-direction: row;
@@ -462,6 +463,12 @@ header * {
   -webkit-box-shadow: 0 9px 12px -6px black;
   -moz-box-shadow: 0 9px 12px -6px black;
   box-shadow: 0 9px 12px -6px black;
+}
+
+#start-today-now-gradient {
+  background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  /* background-color: blue; */
+  z-index: 2;
 }
 
 #start-today-now-text {
@@ -537,7 +544,7 @@ header * {
   z-index: 1;
   background-size: 100% 100%;
   /* opacity: 50%; */
-  background-image: url("./assets/wholesome-gay-couple.png");
+  background-image: url("./assets/real family photos/wholesome-gay-couple.png");
   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
   /* url("./assets//wholesome-gay-couple.png"); */
 }
@@ -547,6 +554,7 @@ header * {
   /* opacity: 0.5; */
   z-index: 2;
 }
+
 .wholesome-overlay-dark {
   background-color: rgba(0, 0, 0, 0.9);
   /* opacity: 0.5; */

@@ -42,106 +42,109 @@ function App() {
           {/* aaaaaaaaaaaaaaaaaaaa */}
           {/* start today now */}
           {/* aaaaaaaaaaaaaaaaaaaa */}
+
           <div id="thePartWithThePicture" className="big-container-00">
-            <div className="sign-up-screen">
-              <div className="screen-splitter"></div>
-              <div className="screen-splitter">
-                <div
-                  id="start-today-now"
-                  className="d-flex flex-col justify-content-center align-items-center"
-                >
-                  <h2 id="start-today-now-text" className="stn-width">
-                    Start Today Now!
-                  </h2>
-                  <hr id="hr-special" className="stn-width" />
-                  {/* FIXME: why did this hr disappear? */}
-                  <div className="w-100">
-                    <div className="my-4 w-100">
-                      <h4 className="white-text">
-                        The ideal family size is...
-                      </h4>
-                      <div className="my-3 d-flex flex-col justify-content-center align-items-center w-100">
-                        <div className="d-flex flex-row justify-content-between align-items-center w-100">
-                          <div className="child-select-div">
-                            <span className="checkmark"></span>
-                            <input
-                              type="radio"
-                              id="ch1"
-                              name="children"
-                              value="1"
-                            />
-                            <label htmlFor="ch1">1 child</label>
-                          </div>
-                          {/* <br /> */}
-                          <div className="child-select-div">
-                            <span className="checkmark"></span>
-                            <input
-                              type="radio"
-                              id="ch2"
-                              name="children"
-                              value="2"
-                            />
-                            <label htmlFor="ch2">2 children</label>
+            <div id="start-today-now-gradient" className="wholesome-overlay">
+              <div className="sign-up-screen">
+                <div className="screen-splitter"></div>
+                <div className="screen-splitter">
+                  <div
+                    id="start-today-now"
+                    className="d-flex flex-col justify-content-center align-items-center"
+                  >
+                    <h2 id="start-today-now-text" className="stn-width">
+                      Start Today Now!
+                    </h2>
+                    <hr id="hr-special" className="stn-width" />
+                    {/* FIXME: why did this hr disappear? */}
+                    <div className="w-100">
+                      <div className="my-4 w-100">
+                        <h4 className="white-text">
+                          The ideal family size is...
+                        </h4>
+                        <div className="my-3 d-flex flex-col justify-content-center align-items-center w-100">
+                          <div className="d-flex flex-row justify-content-between align-items-center w-100">
+                            <div className="child-select-div">
+                              <span className="checkmark"></span>
+                              <input
+                                type="radio"
+                                id="ch1"
+                                name="children"
+                                value="1"
+                              />
+                              <label htmlFor="ch1">1 child</label>
+                            </div>
+                            {/* <br /> */}
+                            <div className="child-select-div">
+                              <span className="checkmark"></span>
+                              <input
+                                type="radio"
+                                id="ch2"
+                                name="children"
+                                value="2"
+                              />
+                              <label htmlFor="ch2">2 children</label>
+                              {/* <br /> */}
+                            </div>
+                            <div className="child-select-div">
+                              <span className="checkmark"></span>
+                              <input
+                                type="radio"
+                                id="ch3"
+                                name="children"
+                                value="3"
+                              />
+                              <label htmlFor="ch3">3 children</label>
+                            </div>
                             {/* <br /> */}
                           </div>
-                          <div className="child-select-div">
-                            <span className="checkmark"></span>
-                            <input
-                              type="radio"
-                              id="ch3"
-                              name="children"
-                              value="3"
-                            />
-                            <label htmlFor="ch3">3 children</label>
+                          <div className="d-flex flex-row justify-content-between align-items-center w-100">
+                            <div className="child-select-div">
+                              <span className="checkmark"></span>
+                              <input
+                                type="radio"
+                                id="ch4"
+                                name="children"
+                                value="4"
+                              />
+                              <label htmlFor="ch4">4 children</label>
+                            </div>
+                            {/* <br /> */}
+                            <div className="child-select-div">
+                              <span className="checkmark"></span>
+                              <input
+                                type="radio"
+                                id="ch5"
+                                name="children"
+                                value="5"
+                              />
+                              <label htmlFor="ch5">5 children</label>
+                            </div>
+                            {/* <br /> */}
+                            <div className="child-select-div">
+                              <span className="checkmark"></span>
+                              <input
+                                type="radio"
+                                id="ch6"
+                                name="children"
+                                value="6+"
+                              />
+                              <label htmlFor="ch6">6+ children</label>
+                            </div>
+                            {/* <br /> */}
                           </div>
-                          {/* <br /> */}
+                          {/* <span className="white-text mx-2">children</span> */}
+                          {/* 1-6, 7+ */}
                         </div>
-                        <div className="d-flex flex-row justify-content-between align-items-center w-100">
-                          <div className="child-select-div">
-                            <span className="checkmark"></span>
-                            <input
-                              type="radio"
-                              id="ch4"
-                              name="children"
-                              value="4"
-                            />
-                            <label htmlFor="ch4">4 children</label>
-                          </div>
-                          {/* <br /> */}
-                          <div className="child-select-div">
-                            <span className="checkmark"></span>
-                            <input
-                              type="radio"
-                              id="ch5"
-                              name="children"
-                              value="5"
-                            />
-                            <label htmlFor="ch5">5 children</label>
-                          </div>
-                          {/* <br /> */}
-                          <div className="child-select-div">
-                            <span className="checkmark"></span>
-                            <input
-                              type="radio"
-                              id="ch6"
-                              name="children"
-                              value="6+"
-                            />
-                            <label htmlFor="ch6">6+ children</label>
-                          </div>
-                          {/* <br /> */}
-                        </div>
-                        {/* <span className="white-text mx-2">children</span> */}
-                        {/* 1-6, 7+ */}
                       </div>
-                    </div>
-                    <div>
-                      <button
-                        id="start-today-now-button"
-                        className="brand-yellow-bg"
-                      >
-                        Join now!
-                      </button>
+                      <div>
+                        <button
+                          id="start-today-now-button"
+                          className="brand-yellow-bg"
+                        >
+                          Join now!
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -382,7 +385,7 @@ function App() {
                 <p>Short Film</p>
                 <p>See All</p>
               </div>
-              <div id="f-newsletter" className="b-debug">
+              <div id="f-newsletter" className="">
                 <div id="newsletter-div">
                   <h3>Newsletter</h3>
                   <input />
