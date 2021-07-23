@@ -67,11 +67,18 @@ function App() {
                     <hr id="hr-special" className="stn-width" />
                     {/* FIXME: why did this hr disappear? */}
                     <div className="w-100">
-                      <div className="my-4 w-100">
+                      <div id="margin-adjust-sml" className="my-4 w-100">
+                        <h4 id="header-copy-sml" className="white-text">
+                          In my ideal future <br />I am the father <br />
+                          of ____ kids.
+                        </h4>
                         <h4 id="ideal-fam-size" className="white-text">
                           The ideal family size is...
                         </h4>
-                        <div className="my-3 d-flex flex-col justify-content-center align-items-center w-100">
+                        <div
+                          id="sml-screen-margin-adjust"
+                          className="my-3 d-flex flex-col justify-content-center align-items-center w-100"
+                        >
                           <div className="d-flex flex-row justify-content-between align-items-center w-100">
                             <div className="child-select-div">
                               <span className="checkmark"></span>
@@ -81,7 +88,12 @@ function App() {
                                 name="children"
                                 value="1"
                               />
-                              <label htmlFor="ch1">1 kid</label>
+                              <label htmlFor="ch1">
+                                1{" "}
+                                <span className="sml-screen-copy-adjust">
+                                  kid
+                                </span>
+                              </label>
                             </div>
                             {/* <br /> */}
                             <div className="child-select-div">
@@ -92,7 +104,12 @@ function App() {
                                 name="children"
                                 value="2"
                               />
-                              <label htmlFor="ch2">2 kids</label>
+                              <label htmlFor="ch2">
+                                2{" "}
+                                <span className="sml-screen-copy-adjust">
+                                  kids
+                                </span>
+                              </label>
                               {/* <br /> */}
                             </div>
                             <div className="child-select-div">
@@ -103,7 +120,12 @@ function App() {
                                 name="children"
                                 value="3"
                               />
-                              <label htmlFor="ch3">3 kids</label>
+                              <label htmlFor="ch3">
+                                3{" "}
+                                <span className="sml-screen-copy-adjust">
+                                  kids
+                                </span>
+                              </label>
                             </div>
                             {/* <br /> */}
                           </div>
@@ -116,7 +138,12 @@ function App() {
                                 name="children"
                                 value="4"
                               />
-                              <label htmlFor="ch4">4 kids</label>
+                              <label htmlFor="ch4">
+                                4{" "}
+                                <span className="sml-screen-copy-adjust">
+                                  kids
+                                </span>
+                              </label>
                             </div>
                             {/* <br /> */}
                             <div className="child-select-div">
@@ -127,7 +154,12 @@ function App() {
                                 name="children"
                                 value="5"
                               />
-                              <label htmlFor="ch5">5 kids</label>
+                              <label htmlFor="ch5">
+                                5{" "}
+                                <span className="sml-screen-copy-adjust">
+                                  kids
+                                </span>
+                              </label>
                             </div>
                             {/* <br /> */}
                             <div className="child-select-div">
@@ -142,8 +174,6 @@ function App() {
                             </div>
                             {/* <br /> */}
                           </div>
-                          {/* <span className="white-text mx-2">children</span> */}
-                          {/* 1-6, 7+ */}
                         </div>
                       </div>
                       <div>

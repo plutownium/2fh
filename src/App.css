@@ -294,6 +294,10 @@ header * {
   display: none;
 }
 
+#header-copy-sml {
+  display: none;
+}
+
 .header-container {
   /* border: 5px solid green; */
   padding: 0 30px 0 30px;
@@ -823,3 +827,109 @@ header * {
     width: 85% !important;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  /* // to 500 px */
+  /* // cover image is being compressed poorly... what to do? must still be aesthetically pleasing... */
+  .big-container-00 {
+    height: 450px !important;
+  }
+
+  #hr-special {
+    margin: 8px;
+  }
+
+  #margin-adjust-sml {
+    margin: 8px 0 !important;
+  }
+
+  .sign-up-screen {
+    height: 450px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #start-today-now-text {
+    font-size: 32px;
+  }
+
+  /* // switch "ideal family size is" to "My ideal future involves parenting ____ children" + "n" in the picker */
+  .child-select-div {
+    width: 58px;
+    height: 40px;
+  }
+
+  #header-copy-sml {
+    display: block;
+  }
+
+  #ideal-fam-size {
+    display: none;
+  }
+
+  .sml-screen-copy-adjust {
+    display: none;
+  }
+
+  #sml-screen-margin-adjust {
+    margin: 0 !important;
+  }
+
+  /* // ad boxes are a mess at 500px. fix. */
+  .img-placeholder {
+    height: 60px;
+    width: 60px;
+  }
+
+  .ad-box h3 {
+    font-size: 20px;
+  }
+
+  .ad-box-subtitle {
+    padding: 0 18px;
+  }
+
+  /* // promo boxes are a mess, fix. make icons smaller, reduce text size, justify text, margin the divs, invis the subs */
+  .pretend-img {
+    height: 60px;
+    width: 60px !important;
+  }
+
+  .promo-box h3 {
+    height: 130px;
+  }
+
+  .promo-box {
+    margin-top: 20px;
+  }
+
+  /* // mk compatibility counts into smaller text, scale the photo */
+  #compatibility-right {
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+    /* background-position-y: 50%; */
+  }
+
+  #compatibility-promo {
+    height: 530px;
+  }
+
+  /* // quality singles headline: reduce size. content: reduce size. photo: resize. section: shrink */
+
+  /* // the real deal: resize image */
+
+  /* //footer: shrink newsletter signup. space cards evenly. respace terms of use etc. */
+}
+
+/* // todo: newsletter placeholder text. copywriting. */
+
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
