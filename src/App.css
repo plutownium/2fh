@@ -193,6 +193,11 @@ input {
   background-size: 100% 100%;
 }
 
+#comp-med-alt {
+  display: none;
+  margin: 0;
+}
+
 .f-box {
   width: 15%;
   /* border: 2px solid green; */
@@ -257,6 +262,7 @@ input {
 
 .f-grey-text {
   color: #666;
+  margin: 0;
 }
 
 .flex-col {
@@ -282,6 +288,10 @@ header * {
 #header-buttons {
   width: 45% !important;
   padding-right: 60px;
+}
+
+#header-buttons-sml {
+  display: none;
 }
 
 .header-container {
@@ -353,6 +363,10 @@ header * {
   border: none;
 }
 
+#petit-text-sml {
+  display: none;
+}
+
 #pr1 {
   background-image: url("./assets/icons/1.png");
   background-size: 100% 100%;
@@ -398,7 +412,7 @@ header * {
   font-weight: 300;
 }
 
-.promo-boxes-container {
+#promo-boxes-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -491,6 +505,11 @@ header * {
   border: none;
 }
 
+#socials-div button img {
+  height: 36px;
+  width: 36px;
+}
+
 #start-today-now {
   /* border: 3px solid green; */
   height: 80%;
@@ -522,6 +541,10 @@ header * {
   margin: 0;
 }
 
+#terms {
+  width: 300px !important;
+}
+
 .text-align-left {
   text-align: left;
 }
@@ -545,13 +568,14 @@ header * {
 }
 
 #welcome-div-container {
-  height: 30%;
+  height: fit-content;
   width: 60%;
 }
 
 #welcome-div-headline {
   font-size: 44px;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
 #welcome-div-content {
@@ -585,6 +609,11 @@ header * {
   color: #ccc;
 }
 
+#terms div {
+  width: 200px !important;
+  margin: 0 10px;
+}
+
 .wholesome-background {
   z-index: 1;
   background-size: 100% 100%;
@@ -611,7 +640,8 @@ header * {
   /* looks like nothing, everything is fine. */
 }
 
-@media only screen and (max-width: 1119px) and (min-width: 900px) {
+@media only screen and (max-width: 1119px) {
+  /* // note: wrote these for 1119 to 900px, if something goes wrong sub-900, check here */
   /* // header is like ... pushing past rhs of screen... must stop */
   #header-buttons {
     padding-right: 100px;
@@ -665,4 +695,131 @@ header * {
   }
 
   /* // web logo text is spilling. solution: widen the div, shorten the text. */
+  #petit-text {
+    width: 110px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* // to 700px */
+  /* header is broken again, take out everything except the logo and login btn */
+  #header-buttons {
+    display: none;
+  }
+
+  #header-buttons-sml {
+    display: block;
+    padding-right: 20px;
+  }
+
+  /* // start today now: shrink me! */
+  #start-today-now-text {
+    font-size: 34px;
+  }
+
+  /* // ideal family size: shrink me! number of kids selector: rm checkbox, shade it when selected. */
+  .checkmark {
+    width: 20px;
+    height: 20px;
+  }
+
+  .child-select-div {
+    width: 80px;
+    padding-left: 8px;
+  }
+
+  #ideal-fam-size {
+    font-size: 20px;
+  }
+
+  #start-today-now {
+    width: 80%;
+  }
+
+  #start-today-now label {
+    font-size: 14px;
+  }
+
+  /* // ad boxes need adjustment. shrink text to 2 lines, pad the subtitle l and r */
+  .ad-box {
+    height: 240px !important;
+  }
+  .ad-box h3 {
+    font-size: 26px;
+  }
+
+  .ad-box-text {
+    margin: 0;
+  }
+
+  .ad-box-subtitle {
+    padding: 0px 5px;
+    height: 30px;
+  }
+
+  .ad-container {
+    height: 270px;
+  }
+
+  #mid-size-media-height-adjustment {
+    height: 240px !important;
+  }
+
+  /* // space out the promo boxes, fill up negative space */
+  .pretend-img {
+    margin-bottom: 8px;
+  }
+
+  .promo-box {
+    width: 22%;
+  }
+
+  .promo-box h3 {
+    height: 90px;
+  }
+
+  #promo-boxes-container {
+    /* width: 90%; */
+    padding: 0 20px;
+  }
+
+  /* // for 'compatibility counts', replace text with smaller text. literally substitute something else. */
+  #comp-text {
+    display: none;
+  }
+
+  #comp-med-alt {
+    display: block;
+  }
+
+  /* // 'we're here for you' content can take wider width; */
+  #whfy-width-control {
+    width: 90% !important;
+  }
+
+  /* // quick links might be more centerable.  webLogo, quickLinks, pages, all need height. */
+  .f-box h3 {
+    /* height: 46px; */
+    width: 130px;
+    letter-spacing: 1px !important;
+    /* border: 3px solid salmon !important; */
+  }
+
+  #f-top {
+    padding: 0px 10px;
+  }
+
+  #petit-text {
+    width: auto;
+    display: none;
+  }
+
+  #petit-text-sml {
+    display: block;
+  }
+
+  /* //Push Copyright to left. */
+  #footer-bottom {
+    width: 85% !important;
+  }
 }

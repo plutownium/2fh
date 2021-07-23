@@ -3,6 +3,10 @@ import "./App.css";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Twitter from "./assets/icons/icons8-twitter-48.png";
+import Insta from "./assets/icons/icons8-instagram-48.png";
+import Facebook from "./assets/icons/icons8-facebook-48.png";
+
 function App() {
   return (
     <div className="App">
@@ -35,6 +39,11 @@ function App() {
               </div>
             </div>
           </div>
+          <div id="header-buttons-sml" className="generic-div-centering">
+            <button className="brand-yellow-bg" id="App-header-button">
+              LOGIN
+            </button>
+          </div>
         </div>
       </header>
       <main>
@@ -59,7 +68,7 @@ function App() {
                     {/* FIXME: why did this hr disappear? */}
                     <div className="w-100">
                       <div className="my-4 w-100">
-                        <h4 className="white-text">
+                        <h4 id="ideal-fam-size" className="white-text">
                           The ideal family size is...
                         </h4>
                         <div className="my-3 d-flex flex-col justify-content-center align-items-center w-100">
@@ -155,14 +164,17 @@ function App() {
           {/* ------ fin ------ */}
           {/* aaaaaaaaaaaaaaaaaaaa */}
           <div id="threeButtonsSideBySide" className="ad-container">
-            <div className="flex-row space-between">
+            <div
+              id="mid-size-media-height-adjustment"
+              className="flex-row space-between"
+            >
               <div className="ad-box brand-dark-blue">
                 <div className="img-placeholder" id="ad-box-left"></div>
                 <h3 className="ad-box-text white-text">
                   <span className="brand-yellow-text">Best</span> Dating Site
                 </h3>
                 <p className="ad-box-subtitle  white-text">
-                  Best way to meet your partner now!
+                  Best way to meet your partner!
                 </p>
               </div>
               <div className="ad-box brand-teal">
@@ -172,7 +184,7 @@ function App() {
                   <span className="brand-yellow-text">15 min</span>
                 </h3>
                 <p className="ad-box-subtitle  white-text">
-                  Best way to meet your partner now!
+                  Best way to meet your partner!
                 </p>
               </div>
               <div className="ad-box brand-soft-blue">
@@ -214,7 +226,7 @@ function App() {
         {/* promotional boxes displaying stats */}
         {/* ********** */}
         <div style={{ height: "300px" }}>
-          <div className="promo-boxes-container">
+          <div id="promo-boxes-container">
             <div className="promo-box">
               <div className="pretend-img" id="pr1"></div>
               <h3>
@@ -246,12 +258,17 @@ function App() {
           <div id="compatibility-left" className="flex-col">
             <div>
               <h2 className="my-4 big-text">Compatibility Counts</h2>
-              <p className="content-text">
+              <p className="content-text" id="comp-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 Pharetra et ultrices neque ornare. Tortor vitae purus faucibus
                 ornare suspendisse sed nisi. Proin nibh nisl condimentum id
                 venenatis a condimentum vitae.
+              </p>
+              <p className="content-text" id="comp-med-alt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Pharetra et ultrices neque ornare.
               </p>
               <button className="my-4 typical-blue-button">join now</button>
             </div>
@@ -370,6 +387,10 @@ function App() {
                   that the residents have owned for over 31 years. the couch is
                   located on Planet Earth in the star system of Sol.
                 </p>
+                <p id="petit-text-sml">
+                  some text yo. we are in fact sitting on a couch in a house
+                  that the residents have owned for over 31 years.
+                </p>
               </div>
               <div id="f-quick-links" className="f-box text-align-left">
                 <div className="f-spacer"></div>
@@ -394,22 +415,40 @@ function App() {
                   <p>Subscribe for updates</p>
                 </div>
                 <div id="socials-div">
-                  <button>Face</button>
-                  <button>twtr</button>
-                  <button>insta</button>
+                  <button type="submit">
+                    <img src={Twitter} alt="twtr" />
+                  </button>
+                  <button type="submit">
+                    <img src={Insta} alt="ig" />
+                  </button>
+                  <button type="submit">
+                    <img src={Facebook} alt="fb" />
+                  </button>
                 </div>
               </div>
             </div>
             <div className="d-flex flex-col justify-content-center align-items-center w-100 h-25">
               <hr id="f-hr" />
-              <div className="d-flex justify-content-between w-75">
-                <div>
+              <div
+                className="d-flex justify-content-between w-75"
+                id="footer-bottom"
+              >
+                <div className="d-flex flex-col justify-content-center align-items-center">
                   <p className="f-grey-text">Copyright 2021 TwoFatherHome</p>
                 </div>
-                <div className="d-flex flex-row justify-content-between w-25 ">
-                  <span className="white-text-off">Terms of Use</span>
-                  <span className="white-text-off">Privacy Policy</span>
-                  <span className="white-text-off">Icons by Icons8</span>
+                <div
+                  className="d-flex flex-row justify-content-between w-25 "
+                  id="terms"
+                >
+                  <div>
+                    <span className="white-text-off">Terms of Use</span>
+                  </div>
+                  <div>
+                    <span className="white-text-off">Privacy Policy</span>
+                  </div>
+                  <div>
+                    <span className="white-text-off">Icons by Icons8</span>
+                  </div>
                 </div>
               </div>
             </div>
