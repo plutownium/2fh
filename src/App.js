@@ -306,6 +306,7 @@ function App() {
           <div id="compatibility-right" className=""></div>
         </section>
         <section
+          id="quality-singles-sml-screen-height-adjust"
           style={{ height: "90vh" }}
           className="brand-grey d-flex align-items-center"
         >
@@ -319,10 +320,10 @@ function App() {
             <div className="w-50">
               <div className="w-100">
                 <div id="quality-singles-right" className="h-100">
-                  <h2 className="my-4 big-text">
+                  <h2 id="sml-screen-copy-adjust2" className="my-4 big-text">
                     Quality Singles, Just Like You
                   </h2>
-                  <p className="content-text">
+                  <p id="sml-screen-copy-adjust3" className="content-text">
                     Looking for a meaningful, loving world, where he can be a
                     family man, and you can too. You can have complete
                     confidence that everyone on this site is looking to start a
@@ -407,7 +408,7 @@ function App() {
           >
             <div
               id="f-top"
-              className="d-flex flex-row justify-content-around align-items-start"
+              className="d-flex flex-row justify-content-around align-items-start f-internal-width"
             >
               <div id="f-logo" className="f-box text-align-left ">
                 <div className="f-spacer"></div>
@@ -418,8 +419,7 @@ function App() {
                   located on Planet Earth in the star system of Sol.
                 </p>
                 <p id="petit-text-sml">
-                  some text yo. we are in fact sitting on a couch in a house
-                  that the residents have owned for over 31 years.
+                  some text yo. we are in fact sitting on a couch in a house.
                 </p>
               </div>
               <div id="f-quick-links" className="f-box text-align-left">
@@ -441,7 +441,10 @@ function App() {
               <div id="f-newsletter" className="">
                 <div id="newsletter-div">
                   <h3>Newsletter</h3>
-                  <input />
+                  <input placeholder="write your email!" />
+                  {/* <button>Get The Newsletter</button> */}
+                  {/* // will anyone notice there is no sign up button?
+                  the lack of a sign up button would cost the company $ -- if the page has a valid criticism, its this. */}
                   <p>Subscribe for updates</p>
                 </div>
                 <div id="socials-div">
@@ -457,13 +460,16 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="d-flex flex-col justify-content-center align-items-center w-100 h-25">
+            <div className="d-flex flex-col justify-content-center align-items-center h-25 f-internal-width">
               <hr id="f-hr" />
               <div
                 className="d-flex justify-content-between w-75"
                 id="footer-bottom"
               >
-                <div className="d-flex flex-col justify-content-center align-items-center">
+                <div
+                  id="f-copyright-sml"
+                  className="d-flex flex-col justify-content-center align-items-center"
+                >
                   <p className="f-grey-text">Copyright 2021 TwoFatherHome</p>
                 </div>
                 <div

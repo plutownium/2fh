@@ -208,8 +208,8 @@ input {
 }
 
 #f-hr {
-  border: 1px solid black;
-  width: 75%;
+  border: 1px solid #bbb;
+  width: 100%;
 }
 
 #f-newsletter {
@@ -219,12 +219,19 @@ input {
   justify-content: space-between;
 }
 
+#f-newsletter input {
+  padding-left: 8px;
+}
+
 .f-spacer {
   height: 30px;
 }
 
-#f-top {
+.f-internal-width {
   width: 90%;
+}
+
+#f-top {
   height: 60%;
 }
 
@@ -232,7 +239,7 @@ input {
   margin: 5px 0 8px 0;
   font-size: 16px;
   letter-spacing: 2px;
-  color: blue;
+  color: rgb(0, 85, 255);
 }
 
 #f-top p {
@@ -243,6 +250,7 @@ input {
 
 .f-wholesome {
   background-image: url("./assets/real family photos/2fh-placeholder-footer.png");
+  background-size: 100% 100%;
 }
 
 #family-size-input {
@@ -824,7 +832,7 @@ header * {
 
   /* //Push Copyright to left. */
   #footer-bottom {
-    width: 85% !important;
+    width: 100% !important;
   }
 }
 
@@ -917,10 +925,70 @@ header * {
   }
 
   /* // quality singles headline: reduce size. content: reduce size. photo: resize. section: shrink */
+  #quality-singles-left-img {
+    background-size: 100% 80%;
+  }
+
+  #quality-singles-sml-screen-height-adjust {
+    height: 500px !important;
+  }
+
+  #sml-screen-copy-adjust2 {
+    width: 120%;
+    font-size: 30px;
+  }
+
+  #sml-screen-copy-adjust3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
 
   /* // the real deal: resize image */
+  #real-deal-left-img {
+    background-size: 100% 70%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+  }
 
   /* //footer: shrink newsletter signup. space cards evenly. respace terms of use etc. */
+  #footer-bottom {
+    width: 100% !important;
+    margin-top: 15px;
+  }
+
+  .f-box h3 {
+    height: 40px;
+    width: 50px;
+  }
+
+  #f-copyright-sml {
+    width: 110px;
+    /* margin-left: 30px; */
+  }
+
+  #f-hr {
+    margin: 0;
+  }
+
+  #f-newsletter input {
+    width: 140px;
+  }
+
+  #f-top {
+    width: 86%;
+    padding: 0;
+    justify-content: space-between !important;
+  }
+
+  #terms {
+    width: 210px !important;
+    /* margin-right: 30px; */
+  }
+
+  #terms div {
+    margin: 0;
+    width: 100px !important;
+  }
 }
 
 /* // todo: newsletter placeholder text. copywriting. */
