@@ -72,7 +72,7 @@ function App() {
                                 name="children"
                                 value="1"
                               />
-                              <label htmlFor="ch1">1 child</label>
+                              <label htmlFor="ch1">1 kid</label>
                             </div>
                             {/* <br /> */}
                             <div className="child-select-div">
@@ -83,7 +83,7 @@ function App() {
                                 name="children"
                                 value="2"
                               />
-                              <label htmlFor="ch2">2 children</label>
+                              <label htmlFor="ch2">2 kids</label>
                               {/* <br /> */}
                             </div>
                             <div className="child-select-div">
@@ -94,7 +94,7 @@ function App() {
                                 name="children"
                                 value="3"
                               />
-                              <label htmlFor="ch3">3 children</label>
+                              <label htmlFor="ch3">3 kids</label>
                             </div>
                             {/* <br /> */}
                           </div>
@@ -107,7 +107,7 @@ function App() {
                                 name="children"
                                 value="4"
                               />
-                              <label htmlFor="ch4">4 children</label>
+                              <label htmlFor="ch4">4 kids</label>
                             </div>
                             {/* <br /> */}
                             <div className="child-select-div">
@@ -118,7 +118,7 @@ function App() {
                                 name="children"
                                 value="5"
                               />
-                              <label htmlFor="ch5">5 children</label>
+                              <label htmlFor="ch5">5 kids</label>
                             </div>
                             {/* <br /> */}
                             <div className="child-select-div">
@@ -129,7 +129,7 @@ function App() {
                                 name="children"
                                 value="6+"
                               />
-                              <label htmlFor="ch6">6+ children</label>
+                              <label htmlFor="ch6">6+ </label>
                             </div>
                             {/* <br /> */}
                           </div>
@@ -167,7 +167,7 @@ function App() {
               </div>
               <div className="ad-box brand-teal">
                 <div className="img-placeholder" id="ad-box-middle"></div>
-                <h3 className="ad-box-text  white-text">
+                <h3 className="ad-box-text  white-text media-query-text-hotfix">
                   Get your partner in just{" "}
                   <span className="brand-yellow-text">15 min</span>
                 </h3>
@@ -177,7 +177,7 @@ function App() {
               </div>
               <div className="ad-box brand-soft-blue">
                 <div className="img-placeholder" id="ad-box-right"></div>
-                <h3 className="ad-box-text  white-text">
+                <h3 className="ad-box-text  white-text media-query-text-hotfix">
                   <span className="brand-yellow-text">Highest </span>Quality
                   Dating Pool
                 </h3>
@@ -216,7 +216,7 @@ function App() {
         <div style={{ height: "300px" }}>
           <div className="promo-boxes-container">
             <div className="promo-box">
-              <div className="pretend-img"></div>
+              <div className="pretend-img" id="pr1"></div>
               <h3>
                 over 2 million <br />
                 found love!
@@ -224,17 +224,17 @@ function App() {
               <p>could you be next?</p>
             </div>
             <div className="promo-box">
-              <div className="pretend-img"></div>
+              <div className="pretend-img" id="pr2"></div>
               <h3>2.3 million messages sent weekly</h3>
               <p>could you be next?</p>
             </div>
             <div className="promo-box">
-              <div className="pretend-img"></div>
+              <div className="pretend-img" id="pr3"></div>
               <h3>site most likely to lead to happy relationships</h3>
               <p>could you be next?</p>
             </div>
             <div className="promo-box">
-              <div className="pretend-img"></div>
+              <div className="pretend-img" id="pr4"></div>
               <h3>100% men invested in finding a life partner</h3>
               <p>could you be next?</p>
             </div>
@@ -263,7 +263,10 @@ function App() {
           className="brand-grey d-flex align-items-center"
         >
           <div className="d-flex h-75 w-100 justify-content-center align-items-center">
-            <div className="h-100 w-50 d-flex align-items-right justify-content-end">
+            <div
+              id="q-s-l-i-container"
+              className="h-100 w-50 d-flex align-items-right justify-content-end"
+            >
               <div id="quality-singles-left-img" className="h-100"></div>
             </div>
             <div className="w-50">
@@ -365,8 +368,7 @@ function App() {
                 <p id="petit-text">
                   some text yo. we are in fact sitting on a couch in a house
                   that the residents have owned for over 31 years. the couch is
-                  located on Planet Earth in the star system of Sol. Empire of
-                  Pain, about the Sacklers, is on the table.
+                  located on Planet Earth in the star system of Sol.
                 </p>
               </div>
               <div id="f-quick-links" className="f-box text-align-left">
@@ -407,6 +409,7 @@ function App() {
                 <div className="d-flex flex-row justify-content-between w-25 ">
                   <span className="white-text-off">Terms of Use</span>
                   <span className="white-text-off">Privacy Policy</span>
+                  <span className="white-text-off">Icons by Icons8</span>
                 </div>
               </div>
             </div>

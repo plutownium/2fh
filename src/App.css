@@ -65,7 +65,7 @@ input {
 
 #App-header-button {
   height: 40px;
-  width: 160px;
+  width: 100px;
   border-radius: 5px;
   border: none;
   color: black;
@@ -128,7 +128,7 @@ input {
 .checkmark {
   height: 25px;
   width: 25px;
-  margin: 0 10px 0 5px;
+  margin: 0 5px 0 0;
   background-color: #dde;
   border-radius: 50%;
 }
@@ -146,7 +146,7 @@ input {
 .child-select-div {
   /* border: 5px solid yellow; */
   height: 50px;
-  width: 155px;
+  width: 120px;
   margin: 10px 0px;
   padding-left: 10px;
   display: flex;
@@ -190,7 +190,7 @@ input {
   /* border: 1px solid black; */
   height: 90%;
   background-image: url("./assets/compatibility-cutout.png");
-  background-size: cover;
+  background-size: 100% 100%;
 }
 
 .f-box {
@@ -281,6 +281,7 @@ header * {
 
 #header-buttons {
   width: 45% !important;
+  padding-right: 60px;
 }
 
 .header-container {
@@ -309,7 +310,8 @@ header * {
 }
 
 .header-options div {
-  width: 100px;
+  width: fit-content;
+  margin: 0 10px;
   /* border: 2px solid red; */
   display: flex;
   justify-content: center;
@@ -351,10 +353,30 @@ header * {
   border: none;
 }
 
+#pr1 {
+  background-image: url("./assets/icons/1.png");
+  background-size: 100% 100%;
+}
+#pr2 {
+  background-image: url("./assets/icons/2.png");
+  background-size: 100% 100%;
+  width: 100px;
+}
+#pr3 {
+  background-image: url("./assets/icons/3.png");
+  background-size: 100% 100%;
+}
+#pr4 {
+  background-image: url("./assets/icons/4.png");
+  background-size: 100% 100%;
+  width: 140px;
+}
+
 .pretend-img {
   height: 80px;
   width: 80px;
-  border: 5px solid yellow;
+  margin-bottom: 40px;
+  /* border: 5px solid yellow; */
 }
 
 .promo-box {
@@ -392,7 +414,7 @@ header * {
 #quality-singles-left-img {
   width: 500px;
   background-image: url("./assets/quality-singles-cutouut.png");
-  background-size: contain;
+  background-size: 100% 100%;
 }
 
 #quality-singles-right {
@@ -463,8 +485,10 @@ header * {
 #socials-div button {
   height: 50px;
   width: 50px;
-  margin-right: 6 px;
+  margin-right: 7px;
   border-radius: 25px;
+  background-color: blue;
+  border: none;
 }
 
 #start-today-now {
@@ -580,4 +604,65 @@ header * {
   background-color: rgba(0, 0, 0, 0.9);
   /* opacity: 0.5; */
   z-index: 2;
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 1120px) {
+  /* what to do here... */
+  /* looks like nothing, everything is fine. */
+}
+
+@media only screen and (max-width: 1119px) and (min-width: 900px) {
+  /* // header is like ... pushing past rhs of screen... must stop */
+  #header-buttons {
+    padding-right: 100px;
+  }
+
+  #header-options-spacer {
+    display: none;
+  }
+
+  /* // shrink Start Today Now text to 2 lines via font size */
+  #start-today-now-text {
+    font-size: 48px;
+  }
+
+  /* // child select divs: just make the text "kid(s)" instead of "children" and shrink width */
+  .child-select-div {
+    width: 95px;
+  }
+
+  /* // highest quality dating pool text needs to have padding */
+  .ad-box-text {
+    height: 80px;
+  }
+
+  .media-query-text-hotfix {
+    padding: 0 10px;
+  }
+
+  /* // compatibility counts: compress the picture so it fits. */
+  #compatibility-left {
+    padding-right: 20px;
+  }
+
+  #compatibility-right {
+    padding-left: 10px;
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+
+  /* // quality singles section picture needs padding left */
+  #quality-singles-left-img {
+    padding-left: 20px;
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+  }
+
+  #q-s-l-i-container {
+    padding-left: 30px;
+  }
+
+  /* // web logo text is spilling. solution: widen the div, shorten the text. */
 }
