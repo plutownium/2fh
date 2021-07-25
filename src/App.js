@@ -55,8 +55,8 @@ function App() {
           <div id="thePartWithThePicture" className="big-container-00">
             <div id="start-today-now-gradient" className="">
               <div className="sign-up-screen">
-                <div className="screen-splitter"></div>
-                <div className="screen-splitter">
+                <div id="s500-stn-adjust" className="screen-splitter"></div>
+                <div id="s500-stn-adjust-right" className="screen-splitter">
                   <div
                     id="start-today-now"
                     className="d-flex flex-col justify-content-center align-items-center"
@@ -200,7 +200,7 @@ function App() {
             >
               <div className="ad-box brand-dark-blue">
                 <div className="img-placeholder" id="ad-box-left"></div>
-                <h3 className="ad-box-text white-text">
+                <h3 id="ad-box-50-adjust" className="ad-box-text white-text">
                   <span className="brand-yellow-text">Best</span> Dating Site
                 </h3>
                 <p className="ad-box-subtitle  white-text">
@@ -231,8 +231,8 @@ function App() {
           </div>
         </div>
         <section
-          style={{ height: "70vh" }}
           className="d-flex justify-content-center align-items-center"
+          id="a500px-screen-adjust"
         >
           {/* for ze background: use an image, and scale it. */}
           {/* when on mobile, just use plain white, or a .. gradient maybe... */}
@@ -257,7 +257,7 @@ function App() {
         {/* ********** */}
         <div style={{ height: "300px" }}>
           <div id="promo-boxes-container">
-            <div className="promo-box">
+            <div className="promo-box ">
               <div className="pretend-img" id="pr1"></div>
               <h3>
                 over 2 million <br />
@@ -265,7 +265,7 @@ function App() {
               </h3>
               <p>could you be next?</p>
             </div>
-            <div className="promo-box">
+            <div className="promo-box a500-display-none">
               <div className="pretend-img" id="pr2"></div>
               <h3>2.3 million messages sent weekly</h3>
               <p>could you be next?</p>
@@ -275,7 +275,7 @@ function App() {
               <h3>site most likely to lead to happy relationships</h3>
               <p>could you be next?</p>
             </div>
-            <div className="promo-box">
+            <div className="promo-box a500-display-none">
               <div className="pretend-img" id="pr4"></div>
               <h3>100% men invested in finding a life partner</h3>
               <p>could you be next?</p>
@@ -287,7 +287,9 @@ function App() {
         <section id="compatibility-promo" className="">
           <div id="compatibility-left" className="flex-col">
             <div>
-              <h2 className="my-4 big-text">Compatibility Counts</h2>
+              <h2 id="a500px-cc-text-adjust" className="my-4 big-text">
+                Compatibility Counts
+              </h2>
               <p className="content-text" id="comp-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -317,8 +319,8 @@ function App() {
             >
               <div id="quality-singles-left-img" className="h-100"></div>
             </div>
-            <div className="w-50">
-              <div className="w-100">
+            <div className="w-50" id="a500px-width-override">
+              <div className="w-100" id="a500px-centering">
                 <div id="quality-singles-right" className="h-100">
                   <h2 id="sml-screen-copy-adjust2" className="my-4 big-text">
                     Quality Singles, Just Like You
@@ -351,18 +353,24 @@ function App() {
                 </h2>
               </div>
               <div className="d-flex flex-col align-items-center justify-content-center">
-                <p id="whfy-width-control" className="content-text white-text">
+                <p
+                  id="whfy-width-control"
+                  className="content-text white-text a500px-margin-adjust"
+                >
                   Signing up for this website is the first step to finding the
                   husband you'll start a family with. From profile tips to
                   sharing your success story, we are here to support you the
                   whole way.
                 </p>
-                <h4 className="brand-yellow-text mb-5">
+                <h4
+                  // id=""
+                  className="brand-yellow-text mb-5 a500px-margin-adjust"
+                >
                   24/7 support, 365 days a year
                 </h4>
               </div>
               <div>
-                <button className="typical-blue-button typical-btn-sml-txt">
+                <button className="typical-blue-button typical-btn-sml-txt a500px-margin-adjust">
                   contact us
                 </button>
               </div>
@@ -373,7 +381,7 @@ function App() {
         {/* the real deal */}
         {/* **** ***** ****** *****  */}
         <section style={{ height: "80vh" }}>
-          <div className="d-flex h-100">
+          <div id="a500px-w-adjust" className="d-flex h-100">
             <div
               id="real-deal-left"
               className="h-100 d-flex justify-content-end align-items-center"
@@ -410,7 +418,7 @@ function App() {
               id="f-top"
               className="d-flex flex-row justify-content-around align-items-start f-internal-width"
             >
-              <div id="f-logo" className="f-box text-align-left ">
+              <div id="f-logo" className="f-box text-align-left a500px-f-hider">
                 <div className="f-spacer"></div>
                 <h3>web logo</h3>
                 <p id="petit-text">
@@ -422,15 +430,18 @@ function App() {
                   some text yo. we are in fact sitting on a couch in a house.
                 </p>
               </div>
-              <div id="f-quick-links" className="f-box text-align-left">
-                <div className="f-spacer"></div>
+              <div
+                id="f-quick-links"
+                className="f-box text-align-left a500px-f-hider"
+              >
+                <div className="f-spacer "></div>
                 <h3>QUICK LINKS</h3>
                 <p>Home</p>
                 <p>Profile</p>
                 <p>Setting</p>
                 <p>Matches</p>
               </div>
-              <div id="f-pages" className="f-box text-align-left">
+              <div id="f-pages" className="f-box text-align-left ">
                 <div className="f-spacer"></div>
                 <h3>PAGES</h3>
                 <p>Privacy Policy</p>
@@ -482,7 +493,7 @@ function App() {
                   <div>
                     <span className="white-text-off">Privacy Policy</span>
                   </div>
-                  <div>
+                  <div id="a500px-sry-icons8">
                     <span className="white-text-off">Icons by Icons8</span>
                   </div>
                 </div>

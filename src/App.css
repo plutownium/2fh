@@ -3,6 +3,10 @@ input {
   border: 3px solid red;
 }
 
+#500px-screen-adjust {
+  height: 70vh;
+}
+
 #ad-box-left {
   background-image: url("./assets/icons/left.png");
   background-size: 100% 100%;
@@ -647,6 +651,13 @@ header * {
   z-index: 2;
 }
 
+@media only screen and (min-width: 1280px) {
+  .child-select-div {
+    width: 140px;
+    padding-left: 15px;
+  }
+}
+
 @media only screen and (max-width: 1250px) and (min-width: 1120px) {
   /* what to do here... */
   /* looks like nothing, everything is fine. */
@@ -721,7 +732,7 @@ header * {
 
   #header-buttons-sml {
     display: block;
-    padding-right: 20px;
+    padding-right: 30px;
   }
 
   /* // start today now: shrink me! */
@@ -883,6 +894,8 @@ header * {
 
   #sml-screen-margin-adjust {
     margin: 0 !important;
+    /* padding: 0 calc(calc(700px - 100vw / 200) * 20px); */
+    /* // todo: adjust padding w calc. scale 20px down to 0 */
   }
 
   /* // ad boxes are a mess at 500px. fix. */
@@ -991,13 +1004,240 @@ header * {
   }
 }
 
-/* // todo: newsletter placeholder text. copywriting. */
+/* TODO: sub 500, check how it looks on a phone */
+/* TODO: sub 500, check how it looks on a phone */
+@media only screen and (max-width: 400px) {
+  .child-select-div {
+    width: 70px !important;
+  }
+}
 
-/* TODO: sub 500, check how it looks on a phone */
-/* TODO: sub 500, check how it looks on a phone */
-/* TODO: sub 500, check how it looks on a phone */
-/* TODO: sub 500, check how it looks on a phone */
-/* TODO: sub 500, check how it looks on a phone */
-/* TODO: sub 500, check how it looks on a phone */
-/* TODO: sub 500, check how it looks on a phone */
-/* TODO: sub 500, check how it looks on a phone */
+@media only screen and (max-width: 500px) {
+  /* // oof */
+  /* header; fine */
+  .App-header {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .header-main-spacing {
+    margin: 0 !important;
+  }
+  /* start today now */
+  #s500-stn-adjust {
+    display: none;
+  }
+
+  #s500-stn-adjust-right {
+    width: 100%;
+  }
+
+  .child-select-div {
+    /* // scale from 100 to 58px */
+    /* width: calc(calc(calc(calc(100% - 320px) / 180) * 42px) + 58px) !important; */
+    /* width: calc(100% - calc(320px + 158px)); */
+    width: 85px;
+  }
+
+  .sign-up-screen {
+    background-image: linear-gradient(
+        to right,
+        rgba(119, 122, 133, 0.596),
+        rgba(22, 58, 179, 0.89)
+      ),
+      url("./assets/real\ family\ photos/sunny-lake-adventure2-flipped.jpg");
+  }
+
+  #start-today-now-button {
+    width: 90% !important;
+  }
+
+  /* ad boxes */
+  .ad-box {
+    width: 33%;
+  }
+  .ad-box-subtitle {
+    display: none;
+  }
+
+  .ad-box-text {
+    font-size: 16px !important;
+    width: 80% !important;
+    /* padding: 0 10px 0 10px; */
+  }
+
+  #ad-box-50-adjust {
+    width: 50% !important;
+  }
+
+  /* TODO: return and check this . do it later as lower stuff might be best order of operations */
+  /* welcome to 2fh */
+  #a500px-screen-adjust {
+    width: auto;
+    height: 400px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  #welcome-div-container {
+    text-align: center !important;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #welcome-div-content {
+    /* display: none; */
+    font-size: 14px;
+    width: 80%;
+    margin: 0 !important;
+    /* fixme: TEMP. fixme */
+  }
+
+  #welcome-div-headline {
+    font-size: 34px;
+  }
+
+  /* TODO: return here after fixing the x-scrolll bar */
+
+  /* promo boxes */
+  .a500-display-none {
+    display: none;
+  }
+
+  .promo-box {
+    margin-top: 0;
+    width: 40%;
+  }
+
+  .promo-box h3 {
+    height: 90px;
+  }
+
+  #promo-boxes-container {
+  }
+
+  /* // compatibility counts section  */
+  #a500px-cc-text-adjust {
+    font-size: 30px;
+  }
+  #compatibility-left {
+    width: 280px !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+  #compatibility-promo {
+  }
+  #compatibility-right {
+    display: none;
+  }
+
+  /* quality singles section  */
+  #a500px-width-override {
+    width: 100% !important;
+  }
+
+  #a500px-centering {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #quality-singles-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #q-s-l-i-container {
+    display: none !important;
+  }
+
+  #sml-screen-copy-adjust2 {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  #sml-screen-copy-adjust3 {
+    text-align: center;
+  }
+
+  /* we're here for you */
+  .a500px-margin-adjust {
+    /* margin: 10px !important; */
+  }
+
+  #we-here-for-you * {
+    margin: 5px 0 !important;
+  }
+
+  #whfy-width-control {
+    font-size: 16px;
+  }
+
+  /* the real deal  */
+  #real-deal-left {
+    display: none !important;
+  }
+
+  #real-deal-right {
+    width: 100% !important;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* // footer */
+  .a500px-f-hider {
+    display: none;
+  }
+
+  #footer-bottom {
+    width: 90% !important;
+  }
+
+  #footer-bottom * {
+    font-size: 12px !important;
+  }
+
+  #f-hr {
+    width: 80% !important;
+  }
+
+  #f-pages {
+    width: 90px !important;
+  }
+
+  #f-top {
+    margin: 0 30px;
+    padding: 0 10px;
+  }
+
+  #a500px-sry-icons8 {
+    display: none;
+  }
+
+  #socials-div button {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #socials-div button img {
+  }
+
+  #terms {
+    width: 160px !important;
+  }
+
+  #terms div {
+    width: 80px !important;
+  }
+}
