@@ -1118,9 +1118,6 @@ header * {
     height: 90px;
   }
 
-  #promo-boxes-container {
-  }
-
   /* // compatibility counts section  */
   #a500px-cc-text-adjust {
     font-size: 30px;
@@ -1130,8 +1127,7 @@ header * {
     padding: 0 !important;
     text-align: center;
   }
-  #compatibility-promo {
-  }
+
   #compatibility-right {
     display: none;
   }
@@ -1166,11 +1162,6 @@ header * {
 
   #sml-screen-copy-adjust3 {
     text-align: center;
-  }
-
-  /* we're here for you */
-  .a500px-margin-adjust {
-    /* margin: 10px !important; */
   }
 
   #we-here-for-you * {
@@ -1228,9 +1219,6 @@ header * {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  #socials-div button img {
   }
 
   #terms {
