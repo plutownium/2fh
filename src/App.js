@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 
 // import logo from "./logo.svg";
@@ -8,12 +9,23 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Twitter from "./assets/icons/icons8-twitter-48.png";
 import Insta from "./assets/icons/icons8-instagram-48.png";
 import Facebook from "./assets/icons/icons8-facebook-48.png";
-import { useState } from "react";
+
+function PopUp(comply) {
+  return (
+    <div>
+      <div>
+        <h3>Select the ideal number of kids in your family.</h3>
+        <button onClick={comply}>Ok</button>
+      </div>
+    </div>
+  );
+}
 
 function App() {
   const history = useHistory();
 
   const [selection, setSelection] = useState(null);
+  const [showPopup, setShowPopup] = useState(false);
 
   const makeSelection = (num) => {
     setSelection(num);
@@ -58,6 +70,7 @@ function App() {
         </div>
       </header>
       <main>
+        {showPopup ? <PopUp comply={setShowPopup(false)} /> : null}
         <div id="word_missing_00">
           {/* aaaaaaaaaaaaaaaaaaaa */}
           {/* start today now */}
@@ -210,13 +223,14 @@ function App() {
                           id="start-today-now-button"
                           className="brand-yellow-bg"
                           onClick={() => {
-                            const selectionMade = setSelection !== null;
+                            const selectionMade = selection !== null;
                             if (selectionMade) {
                               history.push("/signup/firstName", {
                                 from: "Landing",
                               });
                             } else {
                               // todo: popup saying "tell us how many kids your family will have!"
+                              setShowPopup(true);
                             }
                           }}
                         >
