@@ -1,5 +1,9 @@
 import React from "react";
 
+import Twitter from "../../assets/icons/icons8-twitter-48.png";
+import Insta from "../../assets/icons/icons8-instagram-48.png";
+import Facebook from "../../assets/icons/icons8-facebook-48.png";
+
 function Footer() {
   const {
     match: { url },

@@ -77,7 +77,7 @@ function BirthdatePicker() {
           </select>
         </div>
         <div onChange={onDayChange}>
-          <select>{generateDayOptions(01, 2021)}</select>
+          <select>{generateDayOptions(1, 2021)}</select>
         </div>
       </div>
       <div>

@@ -1,8 +1,10 @@
 import React from "react";
 
-import { history } from "../_helper";
+import { useHistory } from "react-router-dom";
 
 function Base(props) {
+  const history = useHistory();
+
   const changePage = (next) => {
     // relocate to next pg
 

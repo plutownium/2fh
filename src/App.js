@@ -12,15 +12,20 @@ import {
   useHistory,
 } from "react-router-dom";
 
-import Header from "./pages/_wrapping";
-import Footer from "./pages/_wrapping";
+import Header from "./pages/_wrapping/Header";
+import Footer from "./pages/_wrapping/Footer";
 
-import Landing from "./pages/public";
-import FirstName from "./signup/0_FirstName";
-import IAmA from "./signup/1_IAmA";
-import Birthdate from "./signup/2_Birthdate";
-import FamilyValues from "./signup/3_FamilyValues";
-import AgeRange from "./signup/4_AgeRange";
+import Landing from "./pages/public/Landing";
+import Home from "./pages/home/Home";
+import Profile from "./pages/profile/Profile";
+import Matches from "./pages/matches/Matches";
+import Settings from "./pages/settings/Settings";
+
+import FirstName from "./pages/signup/FirstName";
+import IAmA from "./pages/signup/IAmA";
+import Birthdate from "./pages/signup/Birthdate";
+import FamilyValues from "./pages/signup/FamilyValues";
+import AgeRange from "./pages/signup/AgeRange";
 
 function App() {
   const history = useHistory();
