@@ -2,10 +2,19 @@ import React from "react";
 
 import Base from "./Base";
 
+function FirstNameInput() {
+  return (
+    <div>
+      <input placeholder="FIRST NAME" />
+      <p>Josh has a nice ring to it...</p>
+    </div>
+  );
+}
+
 function Firstname() {
   const title = "ABOUT YOU";
   const question = "WHAT'S YOUR FIRST NAME?";
-  const menu = "";
+  const menu = FirstNameInput();
   const nextPage = 1; // 0 indexed, so next pg  is 1
   const buttonText = "NEXT";
   return (

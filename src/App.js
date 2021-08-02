@@ -1,3 +1,5 @@
+import { useHistory } from "react-router-dom";
+
 // import logo from "./logo.svg";
 import "./App.css";
 
@@ -6,8 +8,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Twitter from "./assets/icons/icons8-twitter-48.png";
 import Insta from "./assets/icons/icons8-instagram-48.png";
 import Facebook from "./assets/icons/icons8-facebook-48.png";
+import { useState } from "react";
 
 function App() {
+  const history = useHistory();
+
+  const [selection, setSelection] = useState(null);
+
+  const makeSelection = (num) => {
+    setSelection(num);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -80,7 +91,10 @@ function App() {
                           className="my-3 d-flex flex-col justify-content-center align-items-center w-100"
                         >
                           <div className="d-flex flex-row justify-content-between align-items-center w-100">
-                            <div className="child-select-div">
+                            <div
+                              className="child-select-div"
+                              onClick={makeSelection(1)}
+                            >
                               <span className="checkmark"></span>
                               <input
                                 type="radio"
@@ -96,7 +110,10 @@ function App() {
                               </label>
                             </div>
                             {/* <br /> */}
-                            <div className="child-select-div">
+                            <div
+                              className="child-select-div"
+                              onClick={makeSelection(2)}
+                            >
                               <span className="checkmark"></span>
                               <input
                                 type="radio"
@@ -112,7 +129,10 @@ function App() {
                               </label>
                               {/* <br /> */}
                             </div>
-                            <div className="child-select-div">
+                            <div
+                              className="child-select-div"
+                              onClick={makeSelection(3)}
+                            >
                               <span className="checkmark"></span>
                               <input
                                 type="radio"
@@ -130,7 +150,10 @@ function App() {
                             {/* <br /> */}
                           </div>
                           <div className="d-flex flex-row justify-content-between align-items-center w-100">
-                            <div className="child-select-div">
+                            <div
+                              className="child-select-div"
+                              onClick={makeSelection(4)}
+                            >
                               <span className="checkmark"></span>
                               <input
                                 type="radio"
@@ -146,7 +169,10 @@ function App() {
                               </label>
                             </div>
                             {/* <br /> */}
-                            <div className="child-select-div">
+                            <div
+                              className="child-select-div"
+                              onClick={makeSelection(5)}
+                            >
                               <span className="checkmark"></span>
                               <input
                                 type="radio"
@@ -162,7 +188,10 @@ function App() {
                               </label>
                             </div>
                             {/* <br /> */}
-                            <div className="child-select-div">
+                            <div
+                              className="child-select-div"
+                              onClick={makeSelection(6)}
+                            >
                               <span className="checkmark"></span>
                               <input
                                 type="radio"
@@ -180,6 +209,16 @@ function App() {
                         <button
                           id="start-today-now-button"
                           className="brand-yellow-bg"
+                          onClick={() => {
+                            const selectionMade = setSelection !== null;
+                            if (selectionMade) {
+                              history.push("/signup/firstName", {
+                                from: "Landing",
+                              });
+                            } else {
+                              // todo: popup saying "tell us how many kids your family will have!"
+                            }
+                          }}
                         >
                           Join now!
                         </button>

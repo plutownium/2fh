@@ -21,8 +21,8 @@ function Base(props) {
   };
 
   return (
-    <section>
-      <div>
+    <section id="signup-section">
+      <div id="signup-bg">
         <div id="signup-info-card">
           <div>
             <button>
@@ -31,14 +31,14 @@ function Base(props) {
             </button>
           </div>
           <div>
-            <div>
+            <div id="signup-title-cont">
               <h2>{props.title}</h2>
             </div>
-            <div>
-              <h2>{props.question}</h2>
+            <div id="question-box-cont">
+              <h3>{props.question}</h3>
             </div>
-            <div>{props.menu}</div>
-            <div>
+            <div id="menu-container">{props.menu}</div>
+            <div id="visibility-warn-container">
               <img alt="an eye" />
               <p>THIS INFO WILL BE VISIBLE TO OTHERS</p>
             </div>

@@ -1,0 +1,69 @@
+/* major ids for outer divs  */
+/* major ids for outer divs  */
+/* major ids for outer divs  */
+
+#signup-section {
+  height: 100vh;
+}
+
+#signup-bg {
+  background-image: url("../assets/real\ family\ photos/forest-trail-adventure.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* // todo: add opacity */
+}
+
+#signup-info-card {
+  height: 600px;
+  width: 900px;
+  /* // todo: make half transparent */
+  opacity: 0.4;
+  border-radius: 14px;
+}
+
+/* // end of major ids for outer divs  */
+/* // end of major ids for outer divs  */
+/* // end of major ids for outer divs  */
+
+#change-page-btn {
+  background-color: yellow;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 9px 12px -6px black;
+  -moz-box-shadow: 0 9px 12px -6px black;
+  box-shadow: 0 9px 12px -6px black;
+}
+
+#menu-container {
+  /* todo: what to put here? */
+}
+
+#question-box-cont {
+  border: 2px solid goldenrod;
+  width: 100%;
+  height: 40px;
+}
+
+#question-box-cont h3 {
+  border-radius: 8px;
+  background-color: rgb(122, 152, 223);
+}
+
+#signup-title-cont {
+  height: 30px;
+  width: 100%;
+  border: 2px solid black;
+}
+
+#signup-title-cont h2 {
+  font-size: 20px;
+  color: white;
+}
+
+#visibility-warn-container {
+  /* ? */
+}
+
+#visibility-warn-container p {
+  color: #ccc;
+  font-size: 14px;
+}
