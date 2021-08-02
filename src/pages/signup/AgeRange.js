@@ -51,6 +51,7 @@ function AgeRange() {
   const menu = AgeSelect(bottomEnd, upperEnd);
   const nextPage = 5;
   const buttonText = "Finish";
+  const valuesToPass = lowEnd + highEnd; // fixme
   return (
     <Base
       title={title}

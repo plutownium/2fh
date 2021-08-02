@@ -2,19 +2,8 @@ import React, { useState } from "react";
 
 import Base from "./Base";
 
-function BirthdatePicker() {
-  const [year, setYear] = useState(null);
-  const [month, setMonth] = useState(null);
-  const [day, setDay] = useState(null);
-
+function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
   const generateDayOptions = (month, year) => {
-    // const getDaysInMonth = function (month, year) {
-    //   // Here January is 1 based
-    //   //Day 0 is the last day in the previous month
-    //   return new Date(year, month, 0).getDate();
-    //   // Here January is 0 based
-    //   // return new Date(year, month+1, 0).getDate();
-    // };
     // yoink from SO
     const arr = [];
 
@@ -96,11 +85,16 @@ function BirthdatePicker() {
 }
 
 function Birthdate() {
+  const [year, setYear] = useState(null);
+  const [month, setMonth] = useState(null);
+  const [day, setDay] = useState(null);
+
   const title = "ABOUT YOU";
   const question = "WHEN WERE YOU BORN?";
-  const menu = BirthdatePicker();
+  const menu = BirthdatePicker(setYear, setMonth, setDay, year, month, day);
   const nextPage = 3;
   const buttonText = "NEXT";
+  const valuesToPass = month + day + year; // fixme
   return (
     <Base
       title={title}

@@ -4,8 +4,11 @@ import Base from "./Base";
 
 function FirstNameInput() {
   return (
-    <div>
-      <input placeholder="FIRST NAME" />
+    <div className="signup-menu-width">
+      <input
+        placeholder="FIRST NAME"
+        className="w-100 signup-input-height menu-styling"
+      />
       <p>Josh has a nice ring to it...</p>
     </div>
   );

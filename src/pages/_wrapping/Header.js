@@ -1,11 +1,13 @@
 import React from "react";
 
-function Header() {
-  const {
-    match: { url },
-  } = this.props;
+import { useLocation } from "react-router-dom";
 
-  if (url.startWith("/signup")) {
+function Header() {
+  const location = useLocation();
+
+  const url = location.pathname;
+
+  if (String(url).startsWith("/signup")) {
     return null;
   } else {
     // your existing render login

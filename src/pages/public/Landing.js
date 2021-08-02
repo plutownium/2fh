@@ -5,14 +5,18 @@ import { useHistory } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-
-
 function PopUp(comply) {
   return (
     <div>
       <div>
         <h3>Select the ideal number of kids in your family.</h3>
-        <button onClick={comply}>Ok</button>
+        <button
+          onClick={() => {
+            comply();
+          }}
+        >
+          Ok
+        </button>
       </div>
     </div>
   );
@@ -25,6 +29,7 @@ function Landing() {
   const [showPopup, setShowPopup] = useState(false);
 
   const makeSelection = (num) => {
+    console.log("selecting...", num);
     setSelection(num);
   };
 
@@ -68,7 +73,9 @@ function Landing() {
                           <div className="d-flex flex-row justify-content-between align-items-center w-100">
                             <div
                               className="child-select-div"
-                              onClick={makeSelection(1)}
+                              onClick={() => {
+                                makeSelection(1);
+                              }}
                             >
                               <span className="checkmark"></span>
                               <input
@@ -87,7 +94,9 @@ function Landing() {
                             {/* <br /> */}
                             <div
                               className="child-select-div"
-                              onClick={makeSelection(2)}
+                              onClick={() => {
+                                makeSelection(2);
+                              }}
                             >
                               <span className="checkmark"></span>
                               <input
@@ -106,7 +115,9 @@ function Landing() {
                             </div>
                             <div
                               className="child-select-div"
-                              onClick={makeSelection(3)}
+                              onClick={() => {
+                                makeSelection(3);
+                              }}
                             >
                               <span className="checkmark"></span>
                               <input
@@ -127,7 +138,9 @@ function Landing() {
                           <div className="d-flex flex-row justify-content-between align-items-center w-100">
                             <div
                               className="child-select-div"
-                              onClick={makeSelection(4)}
+                              onClick={() => {
+                                makeSelection(4);
+                              }}
                             >
                               <span className="checkmark"></span>
                               <input
@@ -146,7 +159,9 @@ function Landing() {
                             {/* <br /> */}
                             <div
                               className="child-select-div"
-                              onClick={makeSelection(5)}
+                              onClick={() => {
+                                makeSelection(5);
+                              }}
                             >
                               <span className="checkmark"></span>
                               <input
@@ -165,7 +180,9 @@ function Landing() {
                             {/* <br /> */}
                             <div
                               className="child-select-div"
-                              onClick={makeSelection(6)}
+                              onClick={() => {
+                                makeSelection(6);
+                              }}
                             >
                               <span className="checkmark"></span>
                               <input
@@ -186,7 +203,9 @@ function Landing() {
                           className="brand-yellow-bg"
                           onClick={() => {
                             const selectionMade = selection !== null;
+                            console.log("test:", selection);
                             if (selectionMade) {
+                              console.log("going somewhere new...");
                               history.push("/signup/firstName", {
                                 from: "Landing",
                               });

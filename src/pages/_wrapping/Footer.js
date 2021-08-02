@@ -1,15 +1,17 @@
 import React from "react";
 
+import { useLocation } from "react-router-dom";
+
 import Twitter from "../../assets/icons/icons8-twitter-48.png";
 import Insta from "../../assets/icons/icons8-instagram-48.png";
 import Facebook from "../../assets/icons/icons8-facebook-48.png";
 
 function Footer() {
-  const {
-    match: { url },
-  } = this.props;
+  const location = useLocation();
 
-  if (url.startWith("/signup")) {
+  const url = location.pathname;
+
+  if (String(url).startsWith("/signup")) {
     return null;
   } else {
     return (

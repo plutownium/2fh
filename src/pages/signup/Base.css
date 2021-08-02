@@ -1,27 +1,36 @@
 /* major ids for outer divs  */
 /* major ids for outer divs  */
-/* major ids for outer divs  */
 
 #signup-section {
   height: 100vh;
 }
 
 #signup-bg {
-  background-image: url("../assets/real\ family\ photos/forest-trail-adventure.jpg");
+  height: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(245, 246, 252, 0.12),
+      rgba(22, 58, 179, 0.83)
+    ),
+    url("../../assets/real\ family\ photos/forest-trail-adventure.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   /* // todo: add opacity */
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #signup-info-card {
-  height: 600px;
-  width: 900px;
+  height: 480px;
+  width: 720px;
   /* // todo: make half transparent */
-  opacity: 0.4;
+  opacity: 0.915;
   border-radius: 14px;
+  background-color: #dde;
 }
 
-/* // end of major ids for outer divs  */
 /* // end of major ids for outer divs  */
 /* // end of major ids for outer divs  */
 
@@ -33,37 +42,130 @@
   box-shadow: 0 9px 12px -6px black;
 }
 
+.menu-height-adjust {
+  margin: 18px 0;
+}
+
 #menu-container {
   /* todo: what to put here? */
+  width: 100%;
+}
+
+.menu-styling {
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: rgb(167, 174, 187);
+  color: #ff0000 !important;
+  font-size: 20px;
+  padding-left: 36px;
+}
+
+#next-btn-cont {
+  border: 3px solid green;
+  width: 100%;
+  height: 80px;
 }
 
 #question-box-cont {
-  border: 2px solid goldenrod;
-  width: 100%;
+  /* border: 2px solid goldenrod; */
+
   height: 40px;
 }
 
 #question-box-cont h3 {
+  align-items: center;
   border-radius: 8px;
   background-color: rgb(122, 152, 223);
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 36px;
+}
+
+#sic-back-btn {
+  width: 24px;
+  height: 24px;
+  border: 2px solid blue;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sic-back-btn img {
+  height: 12px;
+  width: 12px;
+  /* color: blue; */
+}
+
+#sic-back-btn-cont {
+  position: absolute;
+}
+
+#signup-card-btn {
+  width: 40%;
+  height: 60px;
+  border-radius: 8px;
+  border: none;
+  -webkit-box-shadow: 0 9px 12px -6px black;
+  -moz-box-shadow: 0 9px 12px -6px black;
+  box-shadow: 0 9px 12px -6px black;
+  opacity: 1 !important;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#signup-info-card-cont {
+  width: 80%;
+  height: 80%;
+  /* border: 3px solid red; */
+}
+
+.signup-input-height {
+  height: 54px !important;
+}
+
+#signup-main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-menu-width {
+  width: 100%;
+}
+
+.signup-std-width {
+  width: 100%;
 }
 
 #signup-title-cont {
-  height: 30px;
+  height: 60px;
   width: 100%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 #signup-title-cont h2 {
-  font-size: 20px;
+  text-align: center;
+  font-size: 32px;
   color: white;
 }
 
 #visibility-warn-container {
   /* ? */
+  display: flex;
+}
+
+#visibility-warn-container img {
+  margin: 0 5px;
+  height: 22px;
+  width: 22px;
 }
 
 #visibility-warn-container p {
-  color: #ccc;
+  margin: 0 5px;
+  color: #666;
   font-size: 14px;
+  font-weight: bold;
 }

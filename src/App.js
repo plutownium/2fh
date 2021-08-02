@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // import logo from "./logo.svg";
 import "./App.css";
@@ -10,6 +10,7 @@ import {
   Switch,
   BrowserRouter as Router,
   useHistory,
+  useLocation,
 } from "react-router-dom";
 
 import Header from "./pages/_wrapping/Header";
@@ -28,12 +29,7 @@ import FamilyValues from "./pages/signup/FamilyValues";
 import AgeRange from "./pages/signup/AgeRange";
 
 function App() {
-  const history = useHistory();
-
-  const [selection, setSelection] = useState(null);
-  const [showPopup, setShowPopup] = useState(false);
-
-  const [onMainPages, setOnMainPages] = useState(true);
+  // const [onMainPages, setOnMainPages] = useState(true);
 
   return (
     <main>
