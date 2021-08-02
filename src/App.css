@@ -497,17 +497,12 @@ header * {
   flex-direction: row;
 }
 
-/* .sign-up-screen > div {
-  border: 3px solid red;
-} */
-
 .space-between {
   justify-content: space-between;
 }
 
 #socials-div {
   height: 70px;
-  /* border: 3px solid cyan; */
   display: flex;
   justify-content: left;
 }

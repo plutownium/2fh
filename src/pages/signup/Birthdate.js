@@ -4,14 +4,20 @@ import Base from "./Base";
 
 function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
   const generateDayOptions = (month, year) => {
+    console.log("asdfas");
     // yoink from SO
     const arr = [];
 
     const startDay = 1;
     const endDay = 31;
 
-    for (let i = startDay; i >= endDay; i--) {
-      arr.push(<option value={i}>{i}</option>);
+    for (let i = startDay; i <= endDay; i++) {
+      console.log("EEEEEEEEe");
+      arr.push(
+        <option key={i} value={i}>
+          {i}
+        </option>
+      );
     }
 
     return arr;
@@ -25,7 +31,11 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
     const endYear = new Date().getFullYear();
 
     for (let i = endYear; i >= startYear; i--) {
-      arr.push(<option value={i}>{i}</option>);
+      arr.push(
+        <option key={i} value={i}>
+          {i}
+        </option>
+      );
     }
 
     return arr;
@@ -47,10 +57,13 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
 
   return (
     <div>
-      <div>
-        <div>
-          <select onChange={onMonthChange}>
-            <option value="0">Month</option>
+      <div id="birthday-top-cont" className="d-flex">
+        <div className="width-50 mr-4">
+          <select
+            className="menu-styling menu-height-adjust w-100 "
+            onChange={onMonthChange}
+          >
+            {/* <option value="0">Month</option> */}
             <option value="1">January</option>
             <option value="2">February</option>
             <option value="3">March</option>
@@ -65,13 +78,15 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
             <option value="12">December</option>
           </select>
         </div>
-        <div onChange={onDayChange}>
-          <select>{generateDayOptions(1, 2021)}</select>
+        <div className="width-50 ml-4" onChange={onDayChange}>
+          <select className="menu-styling menu-height-adjust w-100">
+            {generateDayOptions(1, 2021)}
+          </select>
         </div>
       </div>
       <div>
         <select
-          className="form--dob-year"
+          className="form--dob-year menu-styling menu-height-adjust w-100"
           name="year"
           onChange={onYearChange}
           value={year}
@@ -85,9 +100,9 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
 }
 
 function Birthdate() {
-  const [year, setYear] = useState(null);
-  const [month, setMonth] = useState(null);
-  const [day, setDay] = useState(null);
+  const [year, setYear] = useState(2021);
+  const [month, setMonth] = useState(1);
+  const [day, setDay] = useState(1);
 
   const title = "ABOUT YOU";
   const question = "WHEN WERE YOU BORN?";

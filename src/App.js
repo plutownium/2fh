@@ -9,8 +9,8 @@ import {
   Route,
   Switch,
   BrowserRouter as Router,
-  useHistory,
-  useLocation,
+  // useHistory,
+  // useLocation,
 } from "react-router-dom";
 
 import Header from "./pages/_wrapping/Header";

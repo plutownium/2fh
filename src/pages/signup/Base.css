@@ -34,6 +34,15 @@
 /* // end of major ids for outer divs  */
 /* // end of major ids for outer divs  */
 
+#birthday-top-cont {
+  border: 2px solid greenyellow;
+}
+
+.center-text {
+  display: flex;
+  align-items: center;
+}
+
 #change-page-btn {
   background-color: rgb(255, 230, 0);
   border-radius: 8px;
@@ -42,26 +51,25 @@
   box-shadow: 0 9px 12px -6px black;
 }
 
-.menu-height-adjust {
-  margin: 18px 0;
-}
-
 #menu-container {
   /* todo: what to put here? */
   width: 100%;
+}
+
+.menu-height-adjust {
+  margin: 18px 0;
 }
 
 .menu-styling {
   border: 1px solid black;
   border-radius: 6px;
   background-color: rgb(167, 174, 187);
-  color: #ff0000 !important;
+  color: white !important;
   font-size: 20px;
   padding-left: 36px;
 }
 
 #next-btn-cont {
-  border: 3px solid green;
   width: 100%;
   height: 80px;
 }
@@ -154,7 +162,11 @@
 
 #visibility-warn-container {
   /* ? */
+  margin-bottom: 14px;
   display: flex;
+  justify-content: left;
+
+  width: 100%;
 }
 
 #visibility-warn-container img {
@@ -168,4 +180,8 @@
   color: #666;
   font-size: 14px;
   font-weight: bold;
+}
+
+.width-50 {
+  width: 50%;
 }

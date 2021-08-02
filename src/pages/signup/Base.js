@@ -49,7 +49,9 @@ function Base(props) {
                 id="question-box-cont"
                 className="signup-std-width menu-height-adjust"
               >
-                <h3 className="signup-input-height">{props.question}</h3>
+                <h3 className="signup-input-height center-text">
+                  {props.question}
+                </h3>
               </div>
               <div id="menu-container" className="menu-height-adjust">
                 {props.menu}
