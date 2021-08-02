@@ -14,12 +14,14 @@ function Base(props) {
     // relocate to next pg
 
     // todo: push state up to app.js and send back down into post-signup panel
-    if (next === 1) {
+    if (next === 0) {
+      history.push("/signup/firstName");
+    } else if (next === 1) {
       history.push("/signup/iAmA");
     } else if (next === 2) {
       history.push("/signup/birthdate");
     } else if (next === 3) {
-      history.push("/signup/idealPerson");
+      history.push("/signup/familyValues");
     } else if (next === 4) {
       history.push("/signup/ageRange");
     } else if (next === 5) {
@@ -36,7 +38,12 @@ function Base(props) {
         >
           <div id="signup-info-card-cont">
             <div id="sic-back-btn-cont">
-              <button id="sic-back-btn">
+              <button
+                onClick={() => {
+                  changePage(props.nextPage - 2);
+                }}
+                id="sic-back-btn"
+              >
                 {" "}
                 <img alt="back button" src={Arrow} />{" "}
               </button>
@@ -64,15 +71,27 @@ function Base(props) {
                 id="next-btn-cont"
                 className="d-flex justify-content-center align-items-center"
               >
-                <button
-                  className="brand-yellow-bg"
-                  id="signup-card-btn"
-                  onClick={() => {
-                    changePage(props.nextPage);
-                  }}
-                >
-                  {props.buttonText}
-                </button>
+                {props.buttonText === "Finish" ? (
+                  <button
+                    className="brand-yellow-bg small-mod-finished"
+                    id="signup-card-btn"
+                    onClick={() => {
+                      changePage(props.nextPage);
+                    }}
+                  >
+                    {props.buttonText}
+                  </button>
+                ) : (
+                  <button
+                    className="brand-yellow-bg"
+                    id="signup-card-btn"
+                    onClick={() => {
+                      changePage(props.nextPage);
+                    }}
+                  >
+                    {props.buttonText}
+                  </button>
+                )}
               </div>
             </div>
           </div>

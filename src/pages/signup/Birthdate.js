@@ -57,13 +57,13 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
 
   return (
     <div>
-      <div id="birthday-top-cont" className="d-flex">
+      <div id="birthday-top-cont" className="d-flex justify-content-between">
         <div className="width-50 mr-4">
           <select
-            className="menu-styling menu-height-adjust w-100 "
+            className="mr-4 menu-styling bday-menu-h w-100 signup-input-height "
             onChange={onMonthChange}
           >
-            {/* <option value="0">Month</option> */}
+            <option value="0">MONTH</option>
             <option value="1">January</option>
             <option value="2">February</option>
             <option value="3">March</option>
@@ -79,19 +79,20 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
           </select>
         </div>
         <div className="width-50 ml-4" onChange={onDayChange}>
-          <select className="menu-styling menu-height-adjust w-100">
+          <select className="menu-styling bday-menu-h w-100 signup-input-height ml-4">
+            <option value="0">DAY</option>
             {generateDayOptions(1, 2021)}
           </select>
         </div>
       </div>
       <div>
         <select
-          className="form--dob-year menu-styling menu-height-adjust w-100"
+          className="form--dob-year menu-styling bday-menu-h w-100 signup-input-height"
           name="year"
           onChange={onYearChange}
-          value={year}
+          value={"YEAR"}
         >
-          <option value="0">Year</option>
+          <option value="0">YEAR</option>
           {generateYearOptions()}
         </select>
       </div>

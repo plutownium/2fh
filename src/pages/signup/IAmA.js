@@ -4,9 +4,15 @@ import Base from "./Base";
 
 function IAmAInput() {
   return (
-    <div>
-      <input placeholder="MAN" />
-      <input placeholder="WOMAN" />
+    <div className="signup-menu-width" className="d-flex flex-col">
+      <input
+        placeholder="MAN"
+        className="w-100 signup-input-height menu-styling "
+      />
+      <input
+        placeholder="WOMAN"
+        className="w-100 mt-2 signup-input-height menu-styling "
+      />
       <p>Note to reviewers: This is a placeholder as it is a site for gays.</p>
     </div>
   );

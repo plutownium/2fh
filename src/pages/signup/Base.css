@@ -23,7 +23,7 @@
 }
 
 #signup-info-card {
-  height: 480px;
+  height: 500px;
   width: 720px;
   /* // todo: make half transparent */
   opacity: 0.915;
@@ -34,8 +34,24 @@
 /* // end of major ids for outer divs  */
 /* // end of major ids for outer divs  */
 
+.age-range-input {
+  width: 43%;
+}
+
+.age-range-spacer {
+  width: 14%;
+}
+
+.age-range-spacer p {
+  font-size: 20px;
+}
+
+.bday-menu-h {
+  margin: 4px 0;
+}
+
 #birthday-top-cont {
-  border: 2px solid greenyellow;
+  /* border: 2px solid greenyellow; */
 }
 
 .center-text {
@@ -51,13 +67,33 @@
   box-shadow: 0 9px 12px -6px black;
 }
 
+.family-value-btn {
+  padding-left: 24px;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 6px;
+  background-color: rgb(167, 174, 187);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.family-value-btn input {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+}
+
 #menu-container {
   /* todo: what to put here? */
   width: 100%;
 }
 
 .menu-height-adjust {
-  margin: 18px 0;
+  margin: 14px 0;
 }
 
 .menu-styling {
@@ -123,6 +159,9 @@
   font-weight: 600;
 }
 
+#signup-card-finished-btn {
+}
+
 #signup-info-card-cont {
   width: 80%;
   height: 80%;
@@ -160,6 +199,10 @@
   color: white;
 }
 
+.small-mod-finished {
+  margin-top: 60px !important;
+}
+
 #visibility-warn-container {
   /* ? */
   margin-bottom: 14px;
@@ -182,6 +225,10 @@
   font-weight: bold;
 }
 
+.white-text {
+  color: white !important;
+}
+
 .width-50 {
-  width: 50%;
+  width: 49%;
 }

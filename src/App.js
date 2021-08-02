@@ -42,10 +42,10 @@ function App() {
           <Route exact path="/signup/birthdate" component={Birthdate} />
           <Route exact path="/signup/familyValues" component={FamilyValues} />
           <Route exact path="/signup/ageRange" component={AgeRange} />
-          <Route exact path="/home" component={Home} />
-          <Route exact path="/profile" component={Profile} />
-          <Route exact path="/matches" component={Matches} />
-          <Route exact path="/settings" component={Settings} />
+          <Route exact path="/auth/home" component={Home} />
+          <Route exact path="/auth/profile" component={Profile} />
+          <Route exact path="/auth/matches" component={Matches} />
+          <Route exact path="/auth/settings" component={Settings} />
         </Switch>
         <Footer />
       </Router>

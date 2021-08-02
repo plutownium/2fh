@@ -2,32 +2,44 @@ import React, { useState } from "react";
 
 import Base from "./Base";
 
-function AgeSelect(props) {
+function AgeSelect(bottomEnd, upperEnd) {
   function generateAges() {
     const arr = [];
 
     const startAge = 18;
     const endAge = 65;
 
-    for (let i = startAge; i >= endAge; i--) {
-      arr.push(<option value={i}>{i}</option>);
+    for (let i = startAge; i <= endAge; i++) {
+      arr.push(
+        <option key={i} value={i}>
+          {i}
+        </option>
+      );
     }
 
     return arr;
   }
 
   return (
-    <div>
-      <div>
-        <select onChange={(event) => props.bottomEnd(event)}>
+    <div className="d-flex justify-content-between">
+      <div className="age-range-input ">
+        <select
+          className="menu-styling bday-menu-h w-100 signup-input-height"
+          onChange={(event) => bottomEnd(event)}
+        >
+          <option value={19}>19</option>
           {generateAges()}
         </select>
       </div>
-      <div>
-        <p>to</p>
+      <div className="age-range-spacer d-flex justify-content-center align-items-center">
+        <p className="m-0 p-0">to</p>
       </div>
-      <div>
-        <select onChange={(event) => props.upperEnd(event)}>
+      <div className="age-range-input">
+        <select
+          className="menu-styling bday-menu-h w-100 signup-input-height"
+          onChange={(event) => upperEnd(event)}
+        >
+          <option value={19}>19</option>
           {generateAges()}
         </select>
       </div>
@@ -40,11 +52,13 @@ function AgeRange() {
   const [highEnd, setHighEnd] = useState(null);
 
   function bottomEnd(input) {
-    setLowEnd(input);
+    console.log(input.target.value);
+    setLowEnd(input.target.value);
   }
 
   function upperEnd(input) {
-    setHighEnd(input);
+    console.log(input.target.value);
+    setHighEnd(input.target.value);
   }
   const title = "IDEAL PERSON";
   const question = "HOW OLD SHOULD THEY BE?";
