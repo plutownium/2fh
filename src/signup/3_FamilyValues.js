@@ -2,7 +2,7 @@ import React from "react";
 
 import Base from "./Base";
 
-function IdealPerson() {
+function FamilyValues() {
   const GenerateFamilyValues = () => {
     return (
       <div>
@@ -50,4 +50,4 @@ function IdealPerson() {
   );
 }
 
-export default IdealPerson;
+export default FamilyValues;

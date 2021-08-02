@@ -35,7 +35,7 @@ function AgeSelect(props) {
   );
 }
 
-function HowOldShouldTheyBe() {
+function AgeRange() {
   const [lowEnd, setLowEnd] = useState(null);
   const [highEnd, setHighEnd] = useState(null);
 
@@ -62,4 +62,4 @@ function HowOldShouldTheyBe() {
   );
 }
 
-export default HowOldShouldTheyBe;
+export default AgeRange;
