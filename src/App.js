@@ -12,6 +12,9 @@ import {
   useHistory,
 } from "react-router-dom";
 
+import Header from "./pages/_wrapping";
+import Footer from "./pages/_wrapping";
+
 import Landing from "./pages/public";
 import FirstName from "./signup/0_FirstName";
 import IAmA from "./signup/1_IAmA";
@@ -25,9 +28,12 @@ function App() {
   const [selection, setSelection] = useState(null);
   const [showPopup, setShowPopup] = useState(false);
 
+  const [onMainPages, setOnMainPages] = useState(true);
+
   return (
-    <div>
+    <main>
       <Router>
+        <Header />
         <Switch>
           <Route exact path="/" component={Landing} />
           <Route exact path="/signup/firstName" component={FirstName} />
@@ -40,8 +46,9 @@ function App() {
           <Route exact path="/matches" component={Matches} />
           <Route exact path="/settings" component={Settings} />
         </Switch>
+        <Footer />
       </Router>
-    </div>
+    </main>
   );
 }
 
