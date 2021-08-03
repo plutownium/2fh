@@ -26,12 +26,12 @@ function Matches() {
           </div>
           <div id="matches-panel-bg">
             <div id="matches-panel-container">
-              <Match name={"John Doe"} />
-              <Match name={"John Doe"} />
-              <Match name={"John Doe"} />
-              <Match name={"John Doe"} />
-              <Match name={"John Doe"} />
-              <Match name={"John Doe"} />
+              <Match name={"John Doe"} pfp={Match1} />
+              <Match name={"John Doe"} pfp={Match2} />
+              <Match name={"John Doe"} pfp={Match3} />
+              <Match name={"John Doe"} pfp={Match1} />
+              <Match name={"John Doe"} pfp={Match2} />
+              <Match name={"John Doe"} pfp={Match3} />
             </div>
           </div>
         </div>

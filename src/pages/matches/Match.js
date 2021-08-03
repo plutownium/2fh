@@ -4,8 +4,8 @@ import "./Match.css";
 
 function Match({ name, gender, mutuals, views, nudges, pfp }) {
   return (
-    <div id="match-card">
-      <div className="d-flex">
+    <div id="match-card" className="generic-box-shadow">
+      <div className="d-flex px-3">
         <div className="match-card-pfp match-card-top-margin">
           <img src={pfp} />
         </div>
@@ -25,7 +25,7 @@ function Match({ name, gender, mutuals, views, nudges, pfp }) {
           </h4>
         </div>
       </div>
-      <div className="d-flex match-card-bottom">
+      <div className="d-flex justify-content-between match-card-bottom px-4 mb-0">
         <button className="btn-match-blue-text btn-general btn-match">
           View Profile
         </button>
@@ -34,7 +34,7 @@ function Match({ name, gender, mutuals, views, nudges, pfp }) {
           Send Like
         </button>
         <div className="v-line"></div>
-        <button className="btn-match-blue-bg btn-general btn-match">
+        <button className="btn-match-blue-bg btn-general btn-match btn-contact">
           Contact Now
         </button>
       </div>
