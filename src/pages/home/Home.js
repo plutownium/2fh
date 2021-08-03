@@ -32,7 +32,10 @@ function Home() {
               id="home-top-text"
               className="mt-3 mb-2 d-flex justify-content-between ninety-pct-width"
             >
-              <div className="d-flex justify-content-between align-items-center w-75 pr-6">
+              <div
+                id="home-sml-width-hack"
+                className="d-flex justify-content-between align-items-center w-75 pr-6"
+              >
                 <h3>Niraj Kumar</h3>
                 <h3>27</h3>
                 <h3>Kham Khara, India</h3>
