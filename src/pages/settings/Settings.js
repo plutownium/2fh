@@ -6,20 +6,29 @@ import "./Settings.css";
 
 function Settings() {
   return (
-    <div>
+    <div
+      id="settings-bg"
+      className="d-flex justify-content-center align-items-center"
+    >
       <div id="settings-central-spacing">
-        <div>
+        <div id="settings-header">
           <h1>Settings</h1>
+          <h1 className="settings-bg-hack">hidden msg!</h1>
         </div>
-        <div>
+        <div id="settings-panes">
           <div id="settings-pane-left">
             <div id="blue-panel">
-              <img
-                className="profile-avatar"
-                id="profile-avatar-contained"
-                src={Avatar}
-                alt="pfp"
-              />
+              <div
+                className="profile-avatar d-flex"
+                id="settings-avatar-imaged"
+              >
+                <img
+                  className="profile-avatar"
+                  id="settings-avatar-contained"
+                  src={Avatar}
+                  alt="pfp"
+                />
+              </div>
             </div>
             <div id="lower-panel">
               <div className="setting-option">
@@ -39,15 +48,19 @@ function Settings() {
           <div id="settings-pane-right">
             <div>
               <h5>First name</h5>
-              <input placeholder="Your name here" />
-              <button className="btn-save">Save</button>
-              <button className="btn-cancel btn-general">Cancel</button>
+              <input className="input" placeholder="Your name here" />
+              <div>
+                <button className="btn-save btn-general">Save</button>
+                <button className="btn-cancel btn-general">Cancel</button>
+              </div>
             </div>
             <div>
               <h5>Email</h5>
-              <input placeholder="cousinafaq@gmail.com" />
-              <button className="btn-save">Save</button>
-              <button className="btn-cancel btn-general">Cancel</button>
+              <input className="input" placeholder="cousinafaq@gmail.com" />
+              <div>
+                <button className="btn-save btn-general">Save</button>
+                <button className="btn-cancel btn-general">Cancel</button>
+              </div>
             </div>
             <div>
               <h5>Birthday</h5>
@@ -58,14 +71,16 @@ function Settings() {
             </div>
             <div>
               <h5>Location</h5>
-              <input placeholder="Lahore" />
-              <input placeholder="Pakistan" />
-              <button className="btn-save">Save</button>
-              <button className="btn-cancel btn-general">Cancel</button>
+              <input className="input" placeholder="Lahore" />
+              <input className="input" placeholder="Pakistan" />
+              <div>
+                <button className="btn-save btn-general">Save</button>
+                <button className="btn-cancel btn-general">Cancel</button>
+              </div>
             </div>
             <div>
               <h5>Unit preference</h5>
-              <input />
+              <input id="tickbox" type="checkbox" />
               <p className="generic-grey-txt">
                 I prefer to use the metric system
               </p>
@@ -74,11 +89,11 @@ function Settings() {
               <h5>Security</h5>
               <p className="generic-grey-txt">Phone Number</p>
               <p className="generic-blk-txt">984-912-4232-13</p>
-              <button className="btn-save">Edit</button>
+              <button className="btn-save btn-general">Edit</button>
             </div>
             <div>
               <h5>Change your password</h5>
-              <input placeholder="new password" />
+              <input className="input" placeholder="new password" />
               <p className="generic-blk-txt">
                 Forgot your password? <span>Reset it</span>
               </p>
