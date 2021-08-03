@@ -1,0 +1,40 @@
+.btn-match {
+  font-size: 14px;
+}
+
+#match-card h3 {
+  color: rgb(0, 85, 255);
+  font-size: 22px;
+}
+
+#match-card h4 {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 0.3rem;
+}
+
+#match-card img {
+  height: 100%;
+  width: 100%;
+  border: 4px solid seagreen;
+}
+
+#match-card {
+  border: 3px solid pink;
+  width: 380px;
+  margin-bottom: 30px;
+}
+
+.match-card-pfp {
+  width: 140px;
+  height: 140px;
+}
+
+.match-card-bottom {
+  height: 60px;
+  border: 3px solid red;
+}
+
+.match-card-top-margin {
+  margin: 10px 0 10px 10px;
+}
