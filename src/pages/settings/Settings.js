@@ -66,7 +66,8 @@ function Settings() {
               <h5>Birthday</h5>
               <p>July 21, 2021</p>
               <p className="generic-blk-txt">
-                Problem with your birthday? <span>Contact support</span>
+                Problem with your birthday?
+                <br id="set-br" /> <span>Contact support</span>
               </p>
             </div>
             <div>
