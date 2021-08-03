@@ -28,24 +28,32 @@ function Home() {
             id="home-match-card"
             className="d-flex flex-col justify-content-center align-items-center"
           >
-            <div id="home-top-text" className="d-flex">
-              <div className="d-flex">
+            <div
+              id="home-top-text"
+              className="mt-3 mb-2 d-flex justify-content-between ninety-pct-width"
+            >
+              <div className="d-flex justify-content-between align-items-center w-75 pr-6">
                 <h3>Niraj Kumar</h3>
                 <h3>27</h3>
                 <h3>Kham Khara, India</h3>
                 <h3>90%</h3>
-              </div>
-              <div>
                 <h3>View Profile</h3>
               </div>
-              <div className="d-flex">
-                <button>Pass</button>
-                <button>Like</button>
+              <div
+                className="d-flex align-items-center"
+                id="home-btn-container"
+              >
+                <button className="home-btn-std" id="home-btn-pass">
+                  Pass
+                </button>
+                <button className="home-btn-std" id="home-btn-like">
+                  Like
+                </button>
               </div>
             </div>
             <div
               id="home-match-card-imgs"
-              className="d-flex justify-content-between my-2 ninety-pct-width"
+              className="d-flex justify-content-between align-items-start mb-2 ninety-pct-width"
             >
               <div className="">
                 <img src={Match1} alt="candidates for marriage" />
@@ -59,7 +67,7 @@ function Home() {
             </div>
             <div className="ninety-pct-width">
               <div className="d-flex justify-content-left w-100 ">
-                <p className="home-footer-txt">
+                <p className="home-footer-txt" id="home-alert-note">
                   If you like each other, we'll let you know!
                 </p>
               </div>
