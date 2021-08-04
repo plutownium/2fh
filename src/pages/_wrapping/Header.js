@@ -1,11 +1,18 @@
 import React from "react";
 
-import { useLocation } from "react-router-dom";
+import { Redirect, useLocation, useHistory } from "react-router-dom";
 
 function Header() {
   const location = useLocation();
+  const history = useHistory();
 
   const url = location.pathname;
+
+  const pushLocation = (loc, url) => {
+    history.push(loc, {
+      from: url,
+    });
+  };
 
   if (String(url).startsWith("/signup")) {
     return null;
@@ -23,16 +30,40 @@ function Header() {
           <div id="header-buttons" className="header-container">
             <div className="header-options">
               <div>
-                <h3>Home</h3>
+                <h3
+                  onClick={() => {
+                    pushLocation("/auth/home", url);
+                  }}
+                >
+                  Home
+                </h3>
               </div>
               <div>
-                <h3>Profile</h3>
+                <h3
+                  onClick={() => {
+                    pushLocation("/auth/profile", url);
+                  }}
+                >
+                  Profile
+                </h3>
               </div>
               <div>
-                <h3>Setting</h3>
+                <h3
+                  onClick={() => {
+                    pushLocation("/auth/matches", url);
+                  }}
+                >
+                  Matches
+                </h3>
               </div>
               <div>
-                <h3>Matches</h3>
+                <h3
+                  onClick={() => {
+                    pushLocation("/auth/settings", url);
+                  }}
+                >
+                  Setting
+                </h3>
               </div>
               <div id="header-options-spacer"></div>
               <div className="generic-div-centering">

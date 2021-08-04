@@ -7,7 +7,7 @@
 .btn-match {
   margin: 0 !important;
   font-size: 14px;
-  width: 110px !important;
+  width: 110px;
   border: none;
   background-color: white;
   color: rgb(0, 85, 255);
@@ -36,6 +36,10 @@
   /* border: 4px solid seagreen; */
 }
 
+#match-card span {
+  color: red;
+}
+
 #match-card {
   /* border: 3px solid pink; */
   width: 420px;
@@ -55,4 +59,67 @@
 
 .match-card-top-margin {
   margin: 10px 0 10px 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  .btn-contact {
+    width: 100px !important;
+  }
+  .btn-match {
+    width: 95px;
+  }
+  #match-card h4 {
+    font-size: 14px;
+  }
+
+  .match-card-pfp {
+    width: 120px;
+    height: 120px;
+  }
+
+  .match-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  #matches-container {
+    width: 620px !important;
+  }
+
+  #matches-panel-bg {
+    padding-top: 40px !important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .btn-contact {
+    width: 80px !important;
+  }
+
+  .match-card-top-margin h4 {
+    font-size: 13px !important;
+  }
+  .match-card-pfp {
+    display: flex;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  .v-line {
+    display: none;
+  }
+
+  #matches-bg img {
+    height: 85px;
+    width: 85px;
+  }
+  #matches-bg {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #matches-container {
+    width: 88% !important;
+  }
 }

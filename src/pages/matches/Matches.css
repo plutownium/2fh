@@ -10,7 +10,7 @@
 }
 
 #matches-container {
-  margin: 20px 0;
+  margin: 20px 0 50px 0;
   width: 85%;
   height: 90%;
 }
@@ -32,4 +32,18 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+
+#match-screen-title-br {
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  #matches-screen-title {
+    text-align: center;
+  }
+
+  #match-screen-title-br {
+    display: block;
+  }
 }
