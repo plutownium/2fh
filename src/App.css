@@ -52,10 +52,6 @@ input {
 
 .App {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .App-logo {
@@ -775,7 +771,7 @@ header * {
   /* header is broken again, take out everything except the logo and login btn */
 
   #header-buttons {
-    display: none;
+    /* display: none; */
   }
 
   #header-buttons-sml {
@@ -901,6 +897,23 @@ header * {
   /* // cover image is being compressed poorly... what to do? must still be aesthetically pleasing... */
   .big-container-00 {
     height: 450px !important;
+  }
+
+  .header-container h1 {
+    font-size: 20px;
+  }
+
+  .header-options div {
+    width: fit-content;
+    margin: 0 8px;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-options div h3 {
+    font-size: 14px;
   }
 
   #hr-special {
@@ -1070,9 +1083,22 @@ header * {
     justify-content: center !important;
     align-items: center !important;
   }
+
+  #logo-container {
+    display: none;
+  }
+
+  #header-buttons {
+    width: 100% !important;
+    padding: 0;
+    margin: 0;
+  }
+
   .header-main-spacing {
     margin: 0 !important;
+    justify-content: center;
   }
+
   /* start today now */
   #s500-stn-adjust {
     display: none;

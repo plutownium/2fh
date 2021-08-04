@@ -26,7 +26,7 @@ function Header() {
     return (
       <header className="App-header">
         <div className="header-main-spacing">
-          <div className="header-container">
+          <div id="logo-container" className="header-container">
             <div>
               <h1>Logo Here</h1>
             </div>
@@ -70,18 +70,22 @@ function Header() {
                 </h3>
               </div>
               <div id="header-options-spacer"></div>
-              <div id="header-thin-remove" className="generic-div-centering">
-                <button className="brand-yellow-bg" id="App-header-button">
-                  LOGIN
-                </button>
-              </div>
+              {String(url).startsWith("/auth") ? null : (
+                <div id="header-thin-remove" className="generic-div-centering">
+                  <button className="brand-yellow-bg" id="App-header-button">
+                    LOGIN
+                  </button>
+                </div>
+              )}
             </div>
           </div>
-          <div id="header-buttons-sml" className="generic-div-centering">
-            <button className="brand-yellow-bg" id="App-header-button">
-              LOGIN
-            </button>
-          </div>
+          {String(url).startsWith("/auth") ? null : (
+            <div id="header-buttons-sml" className="generic-div-centering">
+              <button className="brand-yellow-bg" id="App-header-button">
+                LOGIN
+              </button>
+            </div>
+          )}
         </div>
       </header>
     );

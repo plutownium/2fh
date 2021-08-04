@@ -5,23 +5,6 @@ import { useHistory } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function PopUp(comply) {
-  return (
-    <div id="popup-div">
-      <div id="popup-content">
-        <h3>Select the ideal number of kids in your family.</h3>
-        <button
-          onClick={() => {
-            comply();
-          }}
-        >
-          Ok
-        </button>
-      </div>
-    </div>
-  );
-}
-
 function Landing() {
   const history = useHistory();
 
@@ -50,7 +33,6 @@ function Landing() {
         </div>
       </div>
       <main>
-        {/* {showPopup ? <PopUp comply={setShowPopup(false)} /> : null} */}
         {/* https://stackoverflow.com/questions/24502898/show-or-hide-element-in-react */}
         <div id="word_missing_00">
           {/* aaaaaaaaaaaaaaaaaaaa */}
