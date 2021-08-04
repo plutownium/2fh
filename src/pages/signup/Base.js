@@ -14,7 +14,9 @@ function Base(props) {
     // relocate to next pg
 
     // todo: push state up to app.js and send back down into post-signup panel
-    if (next === 0) {
+    if (next === -1) {
+      history.push("/");
+    } else if (next === 0) {
       history.push("/signup/firstName");
     } else if (next === 1) {
       history.push("/signup/iAmA");
@@ -34,7 +36,7 @@ function Base(props) {
       <div id="signup-bg">
         <div
           id="signup-info-card"
-          className="d-flex flex-col justify-content-center align-items-center"
+          className="d-flex flex-col justify-content-center align-items-center signup-sml-screen-adjust"
         >
           <div id="signup-info-card-cont">
             <div id="sic-back-btn-cont">
@@ -56,7 +58,7 @@ function Base(props) {
                 id="question-box-cont"
                 className="signup-std-width menu-height-adjust"
               >
-                <h3 className="signup-input-height center-text">
+                <h3 className="signup-input-height center-text signup-sml-height-adjust">
                   {props.question}
                 </h3>
               </div>

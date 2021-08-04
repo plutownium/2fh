@@ -9,7 +9,7 @@ function FirstNameInput() {
         placeholder="FIRST NAME"
         className="w-100 signup-input-height menu-styling"
       />
-      <p>Josh has a nice ring to it...</p>
+      <p className="menu-encouragement">Josh has a nice ring to it...</p>
     </div>
   );
 }

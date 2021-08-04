@@ -92,6 +92,11 @@
   width: 100%;
 }
 
+.menu-encouragement {
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
 .menu-height-adjust {
   margin: 14px 0;
 }
@@ -190,7 +195,6 @@
 #signup-title-cont {
   height: 60px;
   width: 100%;
-  /* border: 2px solid black; */
 }
 
 #signup-title-cont h2 {
@@ -231,4 +235,72 @@
 
 .width-50 {
   width: 49%;
+}
+
+@media screen and (max-width: 701px) {
+  .gender-decider-input {
+    width: 47% !important;
+    font-size: 16px;
+    padding-left: 18px;
+    text-align: left;
+  }
+
+  #menu-container p {
+    margin: 4px 0;
+  }
+
+  .menu-height-adjust {
+    margin: 10px 0 0 0;
+  }
+  .menu-styling {
+    padding-left: 20px;
+  }
+  #next-btn-cont {
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    margin-bottom: 0.6rem;
+  }
+
+  #question-box-cont {
+    height: 50px !important;
+  }
+
+  #question-box-cont h3 {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .signup-sml-height-adjust {
+    height: 46px !important;
+  }
+
+  #signup-sml-screen-adjust {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .signup-sml-screen-adjust {
+    width: 300px !important;
+    height: 400px !important;
+  }
+
+  #signup-title-cont h2 {
+    font-size: 26px;
+  }
+
+  #signup-title-cont {
+    height: 30px;
+    width: 100%;
+  }
+
+  #visibility-warn-container {
+    margin-bottom: 8px;
+  }
 }

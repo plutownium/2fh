@@ -1,19 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Base from "./Base";
 
 function IAmAInput() {
+  const [gender, setGender] = useState(null);
+
   return (
-    <div className="signup-menu-width" className="d-flex flex-col">
+    <div
+      id="signup-sml-screen-adjust"
+      className="signup-menu-width d-flex flex-col"
+    >
       <input
         placeholder="MAN"
-        className="w-100 signup-input-height menu-styling "
+        className={
+          gender === "male"
+            ? "w-100 mb-2 signup-input-height menu-styling gender-decider-input signup-sml-height-adjust selected-div "
+            : "w-100 mb-2 signup-input-height menu-styling gender-decider-input signup-sml-height-adjust"
+        }
+        onClick={() => {
+          setGender("male");
+        }}
       />
       <input
         placeholder="WOMAN"
-        className="w-100 mt-2 signup-input-height menu-styling "
+        className={
+          gender === "female"
+            ? "w-100 signup-input-height menu-styling gender-decider-input signup-sml-height-adjust selected-div"
+            : "w-100 signup-input-height menu-styling gender-decider-input signup-sml-height-adjust"
+        }
+        onClick={() => {
+          setGender("female");
+        }}
       />
-      <p>Note to reviewers: This is a placeholder as it is a site for gays.</p>
+      <p className="menu-encouragement">
+        Note to reviewers: This is a placeholder as it is a site for gays.
+      </p>
     </div>
   );
 }
