@@ -58,7 +58,13 @@ function Base(props) {
                 id="question-box-cont"
                 className="signup-std-width menu-height-adjust"
               >
-                <h3 className="signup-input-height center-text signup-sml-height-adjust">
+                <h3
+                  className={
+                    props.title === "IDEAL PERSON"
+                      ? "signup-input-height center-text signup-sml-height-adjust ideal-person-hack"
+                      : "signup-input-height center-text signup-sml-height-adjust"
+                  }
+                >
                   {props.question}
                 </h3>
               </div>

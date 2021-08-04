@@ -14,6 +14,10 @@ function Header() {
     });
   };
 
+  // if landing: load current
+  // if /auth: load auth header
+  // const landingHeaderBtnsLeft =
+
   if (String(url).startsWith("/signup")) {
     return null;
   } else {
@@ -66,7 +70,7 @@ function Header() {
                 </h3>
               </div>
               <div id="header-options-spacer"></div>
-              <div className="generic-div-centering">
+              <div id="header-thin-remove" className="generic-div-centering">
                 <button className="brand-yellow-bg" id="App-header-button">
                   LOGIN
                 </button>

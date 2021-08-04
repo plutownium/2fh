@@ -773,11 +773,13 @@ header * {
 @media only screen and (max-width: 900px) {
   /* // to 700px */
   /* header is broken again, take out everything except the logo and login btn */
+
   #header-buttons {
     display: none;
   }
 
   #header-buttons-sml {
+    /* displays a separate btn when landing is sml i guess */
     display: block;
     padding-right: 30px;
   }

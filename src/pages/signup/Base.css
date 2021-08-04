@@ -238,11 +238,31 @@
 }
 
 @media screen and (max-width: 701px) {
+  p {
+    margin-bottom: 0.6rem;
+  }
+
   .gender-decider-input {
     width: 47% !important;
     font-size: 16px;
     padding-left: 18px;
     text-align: left;
+  }
+
+  .family-value-btn {
+    height: 36px !important;
+    width: 110px;
+    font-size: 16px;
+    padding-left: 9px !important;
+  }
+
+  .family-value-btn label {
+    font-size: 16px;
+    padding-left: 0;
+  }
+
+  .ideal-person-hack {
+    padding: 0 12px !important;
   }
 
   #menu-container p {
@@ -258,10 +278,6 @@
   #next-btn-cont {
     padding: 0;
     margin: 0;
-  }
-
-  p {
-    margin-bottom: 0.6rem;
   }
 
   #question-box-cont {
@@ -301,6 +317,7 @@
   }
 
   #visibility-warn-container {
+    margin-top: 3px !important;
     margin-bottom: 8px;
   }
 }
