@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Redirect, useLocation, useHistory } from "react-router-dom";
+import { useLocation, useHistory } from "react-router-dom";
 
 function Header() {
   const location = useLocation();

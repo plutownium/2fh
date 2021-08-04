@@ -2,9 +2,16 @@ import React from "react";
 
 import Avatar from "../../assets/avatar.png";
 
+import { useLocation, useHistory } from "react-router-dom";
+
 import "./Settings.css";
 
 function Settings() {
+  const location = useLocation();
+  const history = useHistory();
+
+  const url = location.pathname;
+
   return (
     <div
       id="settings-bg"
@@ -41,7 +48,15 @@ function Settings() {
                 <h3>Privacy</h3>
               </div>
               <div className="setting-option">
-                <h3>Sign out</h3>
+                <h3
+                  onClick={() => {
+                    history.push("/", {
+                      from: url,
+                    });
+                  }}
+                >
+                  Sign out
+                </h3>
               </div>
             </div>
           </div>

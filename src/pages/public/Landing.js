@@ -7,8 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function PopUp(comply) {
   return (
-    <div>
-      <div>
+    <div id="popup-div">
+      <div id="popup-content">
         <h3>Select the ideal number of kids in your family.</h3>
         <button
           onClick={() => {
@@ -35,8 +35,22 @@ function Landing() {
 
   return (
     <div className="App">
+      <div
+        className={showPopup ? "modal-special" : "modal-hidden"}
+        onClick={() => {
+          setShowPopup(false);
+        }}
+      >
+        <div id="modal-special-container">
+          <div>
+            <h2>TwoFatherHome</h2>
+            <p>Select the ideal family size.</p>
+            <p>You can always change your mind later.</p>
+          </div>
+        </div>
+      </div>
       <main>
-        {showPopup ? <PopUp comply={setShowPopup(false)} /> : null}
+        {/* {showPopup ? <PopUp comply={setShowPopup(false)} /> : null} */}
         {/* https://stackoverflow.com/questions/24502898/show-or-hide-element-in-react */}
         <div id="word_missing_00">
           {/* aaaaaaaaaaaaaaaaaaaa */}
@@ -72,7 +86,11 @@ function Landing() {
                         >
                           <div className="d-flex flex-row justify-content-between align-items-center w-100">
                             <div
-                              className="child-select-div"
+                              className={
+                                selection === 1
+                                  ? "child-select-div selected-div"
+                                  : "child-select-div"
+                              }
                               onClick={() => {
                                 makeSelection(1);
                               }}
@@ -93,7 +111,11 @@ function Landing() {
                             </div>
                             {/* <br /> */}
                             <div
-                              className="child-select-div"
+                              className={
+                                selection === 2
+                                  ? "child-select-div selected-div"
+                                  : "child-select-div"
+                              }
                               onClick={() => {
                                 makeSelection(2);
                               }}
@@ -114,7 +136,11 @@ function Landing() {
                               {/* <br /> */}
                             </div>
                             <div
-                              className="child-select-div"
+                              className={
+                                selection === 3
+                                  ? "child-select-div selected-div"
+                                  : "child-select-div"
+                              }
                               onClick={() => {
                                 makeSelection(3);
                               }}
@@ -137,7 +163,11 @@ function Landing() {
                           </div>
                           <div className="d-flex flex-row justify-content-between align-items-center w-100">
                             <div
-                              className="child-select-div"
+                              className={
+                                selection === 4
+                                  ? "child-select-div selected-div"
+                                  : "child-select-div"
+                              }
                               onClick={() => {
                                 makeSelection(4);
                               }}
@@ -158,7 +188,11 @@ function Landing() {
                             </div>
                             {/* <br /> */}
                             <div
-                              className="child-select-div"
+                              className={
+                                selection === 5
+                                  ? "child-select-div selected-div"
+                                  : "child-select-div"
+                              }
                               onClick={() => {
                                 makeSelection(5);
                               }}
@@ -179,7 +213,11 @@ function Landing() {
                             </div>
                             {/* <br /> */}
                             <div
-                              className="child-select-div"
+                              className={
+                                selection === 6
+                                  ? "child-select-div selected-div"
+                                  : "child-select-div"
+                              }
                               onClick={() => {
                                 makeSelection(6);
                               }}
@@ -211,7 +249,9 @@ function Landing() {
                               });
                             } else {
                               // todo: popup saying "tell us how many kids your family will have!"
+                              console.log("adsf:", true, showPopup);
                               setShowPopup(true);
+                              console.log("adsf:", true, showPopup);
                             }
                           }}
                         >

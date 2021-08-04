@@ -52,6 +52,10 @@ input {
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
@@ -365,6 +369,38 @@ header * {
   /* border: 3px solid salmon; */
 }
 
+.modal-hidden {
+  display: none;
+}
+
+.modal-special {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 5 !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#modal-special-container {
+  width: 500px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1 initial !important;
+  z-index: 10 !important;
+  background-color: white;
+}
+
+#modal-special-container p {
+  margin: 10px;
+}
+
 #newsletter-div {
   /* display: flex;
   flex-direction: column;
@@ -381,6 +417,18 @@ header * {
 
 #petit-text-sml {
   display: none;
+}
+
+#popup-content {
+  background-color: white;
+  position: absolute;
+}
+
+#popup-div {
+  display: none;
+  position: fixed;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.25);
 }
 
 #pr1 {
@@ -481,6 +529,10 @@ header * {
   justify-content: center;
   align-items: center;
   /* border: 3px solid green; */
+}
+
+.selected-div {
+  background-color: aquamarine;
 }
 
 .sign-up-screen {

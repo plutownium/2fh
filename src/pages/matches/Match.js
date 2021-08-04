@@ -7,7 +7,7 @@ function Match({ name, gender, mutuals, views, nudges, pfp }) {
     <div id="match-card" className="generic-box-shadow">
       <div className="d-flex px-3">
         <div className="match-card-pfp match-card-top-margin">
-          <img src={pfp} />
+          <img src={pfp} alt="profile pic" />
         </div>
         <div className="match-card-top-margin">
           <h3>{name}</h3>

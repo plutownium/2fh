@@ -110,7 +110,7 @@ function Birthdate() {
   const menu = BirthdatePicker(setYear, setMonth, setDay, year, month, day);
   const nextPage = 3;
   const buttonText = "NEXT";
-  const valuesToPass = month + day + year; // fixme
+  // const valuesToPass = month + day + year; // fixme
   return (
     <Base
       title={title}
