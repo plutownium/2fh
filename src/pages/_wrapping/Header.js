@@ -14,9 +14,68 @@ function Header() {
     });
   };
 
-  // if landing: load current
-  // if /auth: load auth header
-  // const landingHeaderBtnsLeft =
+  const authNavigation = (
+    <div className="header-main-spacing">
+      <div id="logo-container" className="header-container">
+        {/* hide logo when on mobile and /auth */}
+        <div>
+          <h1>Logo Here</h1>
+        </div>
+      </div>
+      <div className="header-options">
+        <div>
+          <h3
+            onClick={() => {
+              pushLocation("/auth/home", url);
+            }}
+          >
+            Home
+          </h3>
+        </div>
+        <div>
+          <h3
+            onClick={() => {
+              pushLocation("/auth/profile", url);
+            }}
+          >
+            Profile
+          </h3>
+        </div>
+        <div>
+          <h3
+            onClick={() => {
+              pushLocation("/auth/matches", url);
+            }}
+          >
+            Matches
+          </h3>
+        </div>
+        <div>
+          <h3
+            onClick={() => {
+              pushLocation("/auth/settings", url);
+            }}
+          >
+            Setting
+          </h3>
+        </div>
+      </div>
+    </div>
+  );
+
+  const landingNavigation = (
+    <div className="header-main-spacing">
+      <div id="logo-container" className="header-container">
+        {/* same on both /desktop and /mobile */}
+        <div>
+          <h1>Logo Here</h1>
+        </div>
+      </div>
+      <div id="header-buttons-sml" className="generic-div-centering">
+        <button className="brand-yellow-bg App-header-button">LOGIN</button>
+      </div>
+    </div>
+  );
 
   if (String(url).startsWith("/signup")) {
     return null;
@@ -25,68 +84,7 @@ function Header() {
 
     return (
       <header className="App-header">
-        <div className="header-main-spacing">
-          <div id="logo-container" className="header-container">
-            <div>
-              <h1>Logo Here</h1>
-            </div>
-          </div>
-          <div id="header-buttons" className="header-container">
-            <div className="header-options">
-              <div>
-                <h3
-                  onClick={() => {
-                    pushLocation("/auth/home", url);
-                  }}
-                >
-                  Home
-                </h3>
-              </div>
-              <div>
-                <h3
-                  onClick={() => {
-                    pushLocation("/auth/profile", url);
-                  }}
-                >
-                  Profile
-                </h3>
-              </div>
-              <div>
-                <h3
-                  onClick={() => {
-                    pushLocation("/auth/matches", url);
-                  }}
-                >
-                  Matches
-                </h3>
-              </div>
-              <div>
-                <h3
-                  onClick={() => {
-                    pushLocation("/auth/settings", url);
-                  }}
-                >
-                  Setting
-                </h3>
-              </div>
-              <div id="header-options-spacer"></div>
-              {String(url).startsWith("/auth") ? null : (
-                <div id="header-thin-remove" className="generic-div-centering">
-                  <button className="brand-yellow-bg" id="App-header-button">
-                    LOGIN
-                  </button>
-                </div>
-              )}
-            </div>
-          </div>
-          {String(url).startsWith("/auth") ? null : (
-            <div id="header-buttons-sml" className="generic-div-centering">
-              <button className="brand-yellow-bg" id="App-header-button">
-                LOGIN
-              </button>
-            </div>
-          )}
-        </div>
+        {url.startsWith("/auth") ? authNavigation : landingNavigation}
       </header>
     );
   }
