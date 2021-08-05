@@ -2,6 +2,8 @@ import React from "react";
 
 import { useLocation, useHistory } from "react-router-dom";
 
+import "./Header.css";
+
 function Header() {
   const location = useLocation();
   const history = useHistory();
@@ -72,7 +74,14 @@ function Header() {
         </div>
       </div>
       <div id="header-buttons-sml" className="generic-div-centering">
-        <button className="brand-yellow-bg App-header-button">LOGIN</button>
+        <button
+          onClick={() => {
+            pushLocation("/auth/home", url);
+          }}
+          className="brand-yellow-bg App-header-button"
+        >
+          LOGIN
+        </button>
       </div>
     </div>
   );
