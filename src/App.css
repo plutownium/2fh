@@ -463,7 +463,7 @@ header * {
 }
 
 .selected-div {
-  background-color: aquamarine;
+  background-color: aquamarine !important;
 }
 
 .sign-up-screen {

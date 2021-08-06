@@ -12,7 +12,7 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
     const endDay = 31;
 
     for (let i = startDay; i <= endDay; i++) {
-      console.log("EEEEEEEEe");
+      console.log("EEEEEEEEeeeeeee");
       arr.push(
         <option key={i} value={i}>
           {i}
@@ -26,11 +26,13 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
   const generateYearOptions = () => {
     // yoink from SO
     const arr = [];
+    console.log("a b c d e f g");
 
     const startYear = 1960; // no one older than 60 is adopting a kid right?
     const endYear = new Date().getFullYear();
 
     for (let i = endYear; i >= startYear; i--) {
+      console.log("aAaaaaAaaaaaaAaaaaaa");
       arr.push(
         <option key={i} value={i}>
           {i}
@@ -90,7 +92,7 @@ function BirthdatePicker(setYear, setMonth, setDay, year, month, day) {
           className="form--dob-year menu-styling bday-menu-h w-100 signup-input-height signup-sml-height-adjust"
           name="year"
           onChange={onYearChange}
-          value={"YEAR"}
+          // value={"YEAR"}
         >
           <option value="0">YEAR</option>
           {generateYearOptions()}

@@ -14,7 +14,7 @@ function IAmAInput() {
         placeholder="MAN"
         className={
           gender === "male"
-            ? "w-100 mb-2 signup-input-height menu-styling gender-decider-input signup-sml-height-adjust selected-div "
+            ? "w-100 mb-2 signup-input-height menu-styling gender-decider-input signup-sml-height-adjust selected-div"
             : "w-100 mb-2 signup-input-height menu-styling gender-decider-input signup-sml-height-adjust"
         }
         onClick={() => {

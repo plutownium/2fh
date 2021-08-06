@@ -12,23 +12,37 @@ function FamilyValues() {
     console.log(values);
   };
 
+  const valueInput = (value) => {
+    return (
+      <div
+        onClick={() => {
+          addValue(value);
+        }}
+        className={
+          values.includes(value)
+            ? "family-value-btn signup-input-height mb-2"
+            : "family-value-btn signup-input-height mb-2 selected-div"
+        }
+      >
+        <input type="radio" />
+        <label>{value}</label>
+      </div>
+    );
+  };
+
   const GenerateFamilyValues = () => {
     return (
       <div className="d-flex flex-wrap justify-content-between">
-        <div
-          onClick={() => {
-            addValue("Generosity");
-          }}
-          className="family-value-btn signup-input-height mb-2"
-        >
-          <input type="radio" />
-          <label>Generosity</label>
-        </div>
+        {valueInput("Generosity")}
         <div
           onClick={() => {
             addValue("Honesty");
           }}
-          className="family-value-btn signup-input-height mb-2"
+          className={
+            values.includes("Honesty")
+              ? "family-value-btn signup-input-height mb-2"
+              : "family-value-btn signup-input-height mb-2 selected-div"
+          }
         >
           <input type="radio" />
           <label>Honesty</label>
@@ -37,7 +51,11 @@ function FamilyValues() {
           onClick={() => {
             addValue("Ambition");
           }}
-          className="family-value-btn signup-input-height mb-2"
+          className={
+            values.includes("Ambition")
+              ? "family-value-btn signup-input-height mb-2 selected-div"
+              : "family-value-btn signup-input-height mb-2"
+          }
         >
           <input type="radio" />
           <label>Ambition</label>
@@ -46,7 +64,11 @@ function FamilyValues() {
           onClick={() => {
             addValue("Modesty");
           }}
-          className="family-value-btn signup-input-height"
+          className={
+            values.includes("Modesty")
+              ? "family-value-btn signup-input-height selected-div"
+              : "family-value-btn signup-input-height"
+          }
         >
           <input type="radio" />
           <label>Modesty</label>
@@ -55,7 +77,11 @@ function FamilyValues() {
           onClick={() => {
             addValue("Teamwork");
           }}
-          className="family-value-btn signup-input-height"
+          className={
+            values.includes("Teamwork")
+              ? "family-value-btn signup-input-height selected-div"
+              : "family-value-btn signup-input-height"
+          }
         >
           <input type="radio" />
           <label>Teamwork</label>
@@ -64,7 +90,11 @@ function FamilyValues() {
           onClick={() => {
             addValue("Saving");
           }}
-          className="family-value-btn signup-input-height"
+          className={
+            values.includes("Saving")
+              ? "family-value-btn signup-input-height selected-div"
+              : "family-value-btn signup-input-height"
+          }
         >
           <input type="radio" />
           <label>Saving</label>
