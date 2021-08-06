@@ -1,5 +1,6 @@
 input {
   margin: 0 10px;
+  caret-color: aquamarine;
   /* border: 3px solid red; */
 }
 
@@ -464,6 +465,7 @@ header * {
 
 .selected-div {
   background-color: aquamarine !important;
+  caret-color: aquamarine;
 }
 
 .sign-up-screen {
