@@ -5,28 +5,28 @@ import Base from "./Base";
 function FamilyValues() {
   const [values, setValues] = useState([]);
 
-  const addValue = (value, currentVals) => {
-    console.log("9:", value, currentVals);
+  const addValueFunction = (value, currentVals) => {
     const currentValues = [...currentVals];
-    console.log(10, currentValues, value);
     const newValues = currentValues.push(value);
-    console.log(12, newValues);
+    console.log(12, newValues, currentValues, currentVals);
     setValues(newValues);
-    console.log(values);
   };
 
-  const valueInput = (value, currentVals) => {
-    console.log(currentVals);
+  const valueInput = (value, currentVals, addValueFunction, index) => {
+    // console.log(16, value, currentVals, addValueFunction);
+    const distributedValues = [...currentVals];
+    // console.log(currentVals, distributedValues);
     return (
       <div
+        key={index}
         onClick={() => {
-          addValue(value, currentVals);
+          addValueFunction(value, distributedValues);
         }}
-        className={
-          currentVals.includes(value)
-            ? "family-value-btn signup-input-height mb-2 selected-div"
-            : "family-value-btn signup-input-height mb-2"
-        }
+        // className={
+        //   distributedValues.includes(value)
+        //     ? "family-value-btn signup-input-height mb-2 selected-div"
+        //     : "family-value-btn signup-input-height mb-2"
+        // }
       >
         <input type="radio" />
         <label>{value}</label>
@@ -34,20 +34,25 @@ function FamilyValues() {
     );
   };
 
-  const familyValues = (
-    <div className="d-flex flex-wrap justify-content-between">
-      {valueInput("Generosity", values)}
-      {valueInput("Honesty", values)}
-      {valueInput("Ambition", values)}
-      {valueInput("Modesty", values)}
-      {valueInput("Teamwork", values)}
-      {valueInput("Saving", values)}
-    </div>
-  );
+  const familyValues = (values, currentValues, addValueFunction) => {
+    console.log(values, currentValues, addValueFunction);
+    return (
+      <div className="d-flex flex-wrap justify-content-between">
+        {values.map(function (element, index) {
+          console.log(element);
+          return valueInput(element, currentValues, addValueFunction, index);
+        })}
+      </div>
+    );
+  };
 
   const title = "IDEAL PERSON";
   const question = "WHAT ARE YOUR IDEAL FAMILY VALUES?";
-  const menu = familyValues;
+  const menu = familyValues(
+    ["Generosity", "Honesty", "Ambition", "Modesty", "Teamwork", "Saving"],
+    values,
+    addValueFunction
+  );
   const nextPage = 4;
   const buttonText = "NEXT";
   return (
