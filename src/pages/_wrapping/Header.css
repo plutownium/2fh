@@ -64,10 +64,6 @@
   width: 40px;
 }
 
-#logo-container {
-  width: ;
-}
-
 @media only screen and (max-width: 1200px) {
   #header-options-spacer {
     display: none;

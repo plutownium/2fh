@@ -67,7 +67,7 @@ function Header() {
 
   const landingNavigation = (
     <div className="header-main-spacing">
-      <div id="logo-container" className="header-container">
+      <div id="logo-container-desktop" className="header-container">
         {/* same on both /desktop and /mobile */}
         <div>
           <h1>Logo Here</h1>
