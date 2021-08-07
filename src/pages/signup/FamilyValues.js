@@ -25,7 +25,12 @@ function FamilyValues() {
           <div
             key={index}
             onClick={() => {
-              addValue(element, familyValues);
+              if (familyValues.includes(element)) {
+                const newValues = familyValues.filter((el) => el !== element);
+                setFamilyValues(newValues);
+              } else {
+                addValue(element, familyValues);
+              }
             }}
             className={
               familyValues.includes(element)
