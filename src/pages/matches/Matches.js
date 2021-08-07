@@ -20,10 +20,10 @@ function Matches() {
           className="d-flex justify-content-left align-items-center flex-col"
         >
           <div
-            class="d-flex justify-content-center align-items center"
+            className="d-flex justify-content-center align-items center"
             id="matches-screen-title"
           >
-            <h2 class="my-4 white-text">
+            <h2 className="my-4 white-text">
               Here Magic Begins. <br id="match-screen-title-br" /> Your Mutual
               Matches.
             </h2>

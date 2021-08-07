@@ -26,15 +26,36 @@ function Match({ name, gender, mutuals, views, nudges, pfp }) {
         </div>
       </div>
       <div className="d-flex justify-content-between match-card-bottom px-4 mb-0">
-        <button className="btn-match-blue-text btn-general btn-match">
+        <button
+          onClick={() => {
+            alert(
+              "View the candidate's profile [Page is a demostration of my ability to implement designs]"
+            );
+          }}
+          className="btn-match-blue-text btn-general btn-match"
+        >
           View Profile
         </button>
         <div className="v-line"></div>
-        <button className="btn-match-blue-text btn-general btn-match">
+        <button
+          onClick={() => {
+            alert(
+              "Like the candidate [Page is a demostration of my ability to implement designs]"
+            );
+          }}
+          className="btn-match-blue-text btn-general btn-match"
+        >
           Send Like
         </button>
         <div className="v-line"></div>
-        <button className="btn-match-blue-bg btn-general btn-match btn-contact">
+        <button
+          onClick={() => {
+            alert(
+              "Send a quick first message [Page is a demostration of my ability to implement designs]"
+            );
+          }}
+          className="btn-match-blue-bg btn-general btn-match btn-contact"
+        >
           Contact Now
         </button>
       </div>

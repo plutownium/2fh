@@ -46,10 +46,26 @@ function Home() {
                 className="d-flex align-items-center"
                 id="home-btn-container"
               >
-                <button className="home-btn-std" id="home-btn-pass">
+                <button
+                  onClick={() => {
+                    alert(
+                      "Passed on a match! [Page is a demostration of my ability to implement designs]"
+                    );
+                  }}
+                  className="home-btn-std"
+                  id="home-btn-pass"
+                >
                   Pass
                 </button>
-                <button className="home-btn-std" id="home-btn-like">
+                <button
+                  onClick={() => {
+                    alert(
+                      "Liked a match! [Page is a demostration of my ability to implement designs]"
+                    );
+                  }}
+                  className="home-btn-std"
+                  id="home-btn-like"
+                >
                   Like
                 </button>
               </div>

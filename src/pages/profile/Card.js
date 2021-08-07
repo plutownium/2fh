@@ -27,7 +27,14 @@ function Card({ headline, subtitle, paragraph }) {
         <p className="big-text-blk m-0 d-flex justify-content-center align-items-center">
           {paragraph}
         </p>
-        <button className="invis-borders big-text-blk d-flex justify-content-center align-items-center">
+        <button
+          onClick={() => {
+            alert(
+              "Would edit the text but its a demo... [Page is a demostration of my ability to implement designs]"
+            );
+          }}
+          className="invis-borders big-text-blk d-flex justify-content-center align-items-center"
+        >
           Edit
           <img className="m-2" src={Edit} alt="edit" />
         </button>
