@@ -109,8 +109,13 @@
 
   .header-main-spacing {
     margin: 0 0 !important;
-
+    width: auto !important;
     justify-content: space-between;
+  }
+
+  .header-options {
+    width: auto;
+    padding-right: 0 !important;
   }
 
   #logo-container {
