@@ -1,0 +1,18 @@
+.input-formatting {
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+.align-single-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.align-single-row div {
+	margin-right: 30px;
+}
+
+.align-single-row div * {
+	margin-top: 10px;
+}
